@@ -1,680 +1,678 @@
-<?xml version="1.0"  encoding="ISO-8859-1"?>
+<?xml version="1.0"  encoding="utf-8"?>
 <bibliotheque>
 	<adherents>
-			<adherent etatAdhesion="Actif">
-		<adherentID>1</adherentID>
-		<prenom>Léonie</prenom>
-		<nom>Clement</nom>
-		<age>45</age>
-		<email>Sed.auctor@Inat.net</email>
-		<telephone>06 85 97 42 55</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>2</adherentID>
-		<prenom>Chloé</prenom>
-		<nom>Fernandez</nom>
-		<age>46</age>
-		<email>neque@risus.com</email>
-		<telephone>06 41 60 92 78</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>3</adherentID>
-		<prenom>Esteban</prenom>
-		<nom>Huet</nom>
-		<age>56</age>
-		<email>quis@elitelit.com</email>
-		<telephone>06 88 39 48 24</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>4</adherentID>
-		<prenom>Constant</prenom>
-		<nom>Remy</nom>
-		<age>59</age>
-		<email>elit.Etiam@mit.org</email>
-		<telephone>06 15 95 06 50</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>5</adherentID>
-		<prenom>Alice</prenom>
-		<nom>Perrin</nom>
-		<age>39</age>
-		<email>eu.ultrices.sit@mi.ca</email>
-		<telephone>06 70 95 06 70</telephone>
-	</adherent>
-	<adherent etatAdhesion="Termine">
-		<adherentID>6</adherentID>
-		<prenom>Pauline</prenom>
-		<nom>Dumas</nom>
-		<age>47</age>
-		<email>neque.vitae@acurna.net</email>
-		<telephone>06 95 15 87 31</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>7</adherentID>
-		<prenom>Clémence</prenom>
-		<nom>Benoit</nom>
-		<age>57</age>
-		<email>elit.pede@facilisis.net</email>
-		<telephone>06 59 02 03 74</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>8</adherentID>
-		<prenom>Romane</prenom>
-		<nom>Remy</nom>
-		<age>45</age>
-		<email>lobortis.quam.a@etmagnis.co.uk</email>
-		<telephone>06 64 37 97 81</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>9</adherentID>
-		<prenom>Colin</prenom>
-		<nom>Andre</nom>
-		<age>49</age>
-		<email>consectetuer@mit.org</email>
-		<telephone>06 34 45 29 00</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>10</adherentID>
-		<prenom>Jérémy</prenom>
-		<nom>Sanchez</nom>
-		<age>54</age>
-		<email>elit.pellentesque@mit.org</email>
-		<telephone>06 21 55 23 59</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>11</adherentID>
-		<prenom>Dorian</prenom>
-		<nom>Blanchard</nom>
-		<age>28</age>
-		<email>dictum@dolorvitae.org</email>
-		<telephone>06 22 89 16 97</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>12</adherentID>
-		<prenom>Gaspard</prenom>
-		<nom>Guyot</nom>
-		<age>58</age>
-		<email>mauris.Morbi.non@Quisque.com</email>
-		<telephone>06 60 79 02 60</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>13</adherentID>
-		<prenom>Léonard</prenom>
-		<nom>Germain</nom>
-		<age>42</age>
-		<email>ante@non.edu</email>
-		<telephone>06 96 52 14 90</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>14</adherentID>
-		<prenom>Jules</prenom>
-		<nom>Marty</nom>
-		<age>36</age>
-		<email>Suspendisse.sagittis@eclu.org</email>
-		<telephone>06 70 69 59 13</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>15</adherentID>
-		<prenom>Adrien</prenom>
-		<nom>Petit</nom>
-		<age>36</age>
-		<email>neque@quistristique.net</email>
-		<telephone>06 71 44 17 87</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>16</adherentID>
-		<prenom>Antonin</prenom>
-		<nom>Leroy</nom>
-		<age>54</age>
-		<email>ac.nulla@etlaciniavitae.edu</email>
-		<telephone>06 15 87 24 08</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>17</adherentID>
-		<prenom>Loevan</prenom>
-		<nom>Poulain</nom>
-		<age>22</age>
-		<email>eleifend.Cras.sed@gh.org</email>
-		<telephone>06 59 88 68 76</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>18</adherentID>
-		<prenom>Amélie</prenom>
-		<nom>Morin</nom>
-		<age>57</age>
-		<email>hel@Nullasemper.ca</email>
-		<telephone>06 92 31 25 67</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>19</adherentID>
-		<prenom>Mathéo</prenom>
-		<nom>Hubert</nom>
-		<age>36</age>
-		<email>elit.Aliquam@mit.co.uk</email>
-		<telephone>06 32 23 66 98</telephone>
-	</adherent>
-	<adherent etatAdhesion="Termine">
-		<adherentID>20</adherentID>
-		<prenom>Marie</prenom>
-		<nom>Guillaume</nom>
-		<age>34</age>
-		<email>fringilla@Aliquam.co.uk</email>
-		<telephone>06 75 25 74 82</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>21</adherentID>
-		<prenom>Titouan</prenom>
-		<nom>Marechal</nom>
-		<age>54</age>
-		<email>vel@cursus.edu</email>
-		<telephone>06 57 74 60 49</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>22</adherentID>
-		<prenom>Lina</prenom>
-		<nom>Simon</nom>
-		<age>31</age>
-		<email>quis.pede@mit.edu</email>
-		<telephone>06 42 94 85 36</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>23</adherentID>
-		<prenom>Cloé</prenom>
-		<nom>Pereira</nom>
-		<age>57</age>
-		<email>aliquam.eu@sit.com</email>
-		<telephone>06 34 84 17 68</telephone>
-	</adherent>
-	<adherent etatAdhesion="Termine">
-		<adherentID>24</adherentID>
-		<prenom>Capucine</prenom>
-		<nom>Poulain</nom>
-		<age>39</age>
-		<email>auctor.odio@aliquet.com</email>
-		<telephone>06 97 93 53 41</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>25</adherentID>
-		<prenom>Mathilde</prenom>
-		<nom>Klein</nom>
-		<age>41</age>
-		<email>nulla.Integer@mit.co.uk</email>
-		<telephone>06 77 00 05 13</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>26</adherentID>
-		<prenom>Salomé</prenom>
-		<nom>Perrot</nom>
-		<age>50</age>
-		<email>eu@rutrumFusce.edu</email>
-		<telephone>06 54 43 23 37</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>27</adherentID>
-		<prenom>Constant</prenom>
-		<nom>Poulain</nom>
-		<age>23</age>
-		<email>Donec.tempor@Craseutellus.edu</email>
-		<telephone>06 44 87 78 64</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>28</adherentID>
-		<prenom>Carla</prenom>
-		<nom>Jacquet</nom>
-		<age>22</age>
-		<email>nec.quam.Curabitur@irs.edu</email>
-		<telephone>06 94 47 11 75</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>29</adherentID>
-		<prenom>Maxence</prenom>
-		<nom>Albert</nom>
-		<age>48</age>
-		<email>Donec.fringilla.Donec@cursus.ca</email>
-		<telephone>06 88 69 66 38</telephone>
-	</adherent>
-	<adherent etatAdhesion="Actif">
-		<adherentID>30</adherentID>
-		<prenom>Zoé</prenom>
-		<nom>Dufour</nom>
-		<age>20</age>
-		<email>vitae.risus.Duis@nostraper.edu</email>
-		<telephone>06 96 96 28 39</telephone>
-	</adherent>
-</adherents>
-<ouvrages>
-	<ouvrages>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>1</ouvrageID>
-		<ISBN>2-266-11156-6</ISBN>
-		<titre>Le Printemps</titre>
-		<auteur>Paul Jean</auteur>
-		<anneePublication>2014</anneePublication>
-		<editeur>Flammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Restreinte">
-		<ouvrageID>2</ouvrageID>
-		<ISBN>2-999-14856-6</ISBN>
-		<titre>Le Capital</titre>
-		<auteur>Karl Marx</auteur>
-		<anneePublication>1820</anneePublication>
-		<editeur>Engels&amp;CO</editeur>
-		<langue>allemand</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>3</ouvrageID>
-		<ISBN>1-225-14856-7</ISBN>
-		<titre>L'été</titre>
-		<auteur>Paul Jean</auteur>
-		<anneePublication>2015</anneePublication>
-		<editeur>Flammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>4</ouvrageID>
-		<ISBN>3-465-78956-6</ISBN>
-		<titre>L'Automne</titre>
-		<auteur>Paul Jean</auteur>
-		<anneePublication>2016</anneePublication>
-		<editeur>Flammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>5</ouvrageID>
-		<ISBN>9-566-79988-6</ISBN>
-		<titre>Le DTD pour les nuls</titre>
-		<auteur>Hervé Mauroin</auteur>
-		<anneePublication>2009</anneePublication>
-		<editeur>Pearson</editeur>
-		<langue>anglais</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>6</ouvrageID>
-		<ISBN>9-965-55594-3</ISBN>
-		<titre>L'hiver</titre>
-		<auteur>Yves Sartrus</auteur>
-		<anneePublication>1954</anneePublication>
-		<editeur>Gammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>7</ouvrageID>
-		<ISBN>5-654-33569-2</ISBN>
-		<titre>La question</titre>
-		<auteur>Pierre Connu</auteur>
-		<anneePublication>1996</anneePublication>
-		<editeur>Gammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>8</ouvrageID>
-		<ISBN>3-656-93715-6</ISBN>
-		<titre>La réponse</titre>
-		<auteur>Louis Inconnu</auteur>
-		<anneePublication>1997</anneePublication>
-		<editeur>Flammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>8</ouvrageID>
-		<ISBN>9-777-45685-3</ISBN>
-		<titre>What is bullshit</titre>
-		<auteur>Lock James</auteur>
-		<anneePublication>2001</anneePublication>
-		<editeur>Pinguin</editeur>
-		<langue>anglais</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>9</ouvrageID>
-		<ISBN>9-656-66854-3</ISBN>
-		<titre>Après</titre>
-		<auteur>Alexandre Lent</auteur>
-		<anneePublication>1995</anneePublication>
-		<editeur>Flammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>10</ouvrageID>
-		<ISBN>6-996-35568-9</ISBN>
-		<titre>L'ecole</titre>
-		<auteur>Bernard Belletante</auteur>
-		<anneePublication>2010</anneePublication>
-		<editeur>Gammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>11</ouvrageID>
-		<ISBN>6-558-73851-6</ISBN>
-		<titre>Mein Kampf</titre>
-		<auteur>Adolf Hitler</auteur>
-		<anneePublication>1932</anneePublication>
-		<editeur>Die Spielgel</editeur>
-		<langue>allemand</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Restreinte">
-		<ouvrageID>12</ouvrageID>
-		<ISBN>6-584-66958-3</ISBN>
-		<titre>La Morale</titre>
-		<auteur>Pierre Lejuste</auteur>
-		<anneePublication>1933</anneePublication>
-		<editeur>Flammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>13</ouvrageID>
-		<ISBN>9-564-96589-3</ISBN>
-		<titre>L'ennui</titre>
-		<auteur>Tristan Morose</auteur>
-		<anneePublication>2016</anneePublication>
-		<editeur>Pinguin</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>14</ouvrageID>
-		<ISBN>3-636-69584-8</ISBN>
-		<titre>La douleur</titre>
-		<auteur>Jean-Luc Brutale</auteur>
-		<anneePublication>2011</anneePublication>
-		<editeur>Gammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>15</ouvrageID>
-		<ISBN>2-632-66358-6</ISBN>
-		<titre>A bout</titre>
-		<auteur>Jean-Luc Brutale</auteur>
-		<anneePublication>2012</anneePublication>
-		<editeur>Gammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>16</ouvrageID>
-		<ISBN>8-996-65832-6</ISBN>
-		<titre>Rien</titre>
-		<auteur>Paul Bona</auteur>
-		<anneePublication>2004</anneePublication>
-		<editeur>Flammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>17</ouvrageID>
-		<ISBN>6-556-59658-6</ISBN>
-		<titre>Bon</titre>
-		<auteur>Nicolas Mauvois</auteur>
-		<anneePublication>2013</anneePublication>
-		<editeur>Pinguin</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>18</ouvrageID>
-		<ISBN>6-665-99965-2</ISBN>
-		<titre>Le changement</titre>
-		<auteur>Francois Esparrat</auteur>
-		<anneePublication>1999</anneePublication>
-		<editeur>Gammarion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Restreinte">
-		<ouvrageID>19</ouvrageID>
-		<ISBN>2-654-666445-8</ISBN>
-		<titre>Who's next?</titre>
-		<auteur>Bob Dillard</auteur>
-		<anneePublication>2004</anneePublication>
-		<editeur>Pinguin</editeur>
-		<langue>anglais</langue>
-	</ouvrage>
-	<ouvrage disponibilite="Disponible">
-		<ouvrageID>20</ouvrageID>
-		<ISBN>3-333-58462-9</ISBN>
-		<titre>La fin</titre>
-		<auteur>Paul Bangé</auteur>
-		<anneePublication>2014</anneePublication>
-		<editeur>Flammrion</editeur>
-		<langue>français</langue>
-	</ouvrage>
-</ouvrages>
-</ouvrages>
-<prets>
-	<pret status="Rendu">
-		<pretID>1</pretID>
-		<adherentID>23</adherentID>
-		<ouvrageID>11</ouvrageID>
-		<dateEmprunt>2016-09-01</dateEmprunt>
-		<dateRetourPrevue>2016-09-21</dateRetourPrevue>
-		<dateRetour>2016-09-29</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>2</pretID>
-		<adherentID>13</adherentID>
-		<ouvrageID>3</ouvrageID>
-		<dateEmprunt>2016-09-02</dateEmprunt>
-		<dateRetourPrevue>2016-22</dateRetourPrevue>
-		<dateRetour>2016-10-07</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>3</pretID>
-		<adherentID>30</adherentID>
-		<ouvrageID>3</ouvrageID>
-		<dateEmprunt>2016-09-03</dateEmprunt>
-		<dateRetourPrevue>2016-09-23</dateRetourPrevue>
-		<dateRetour>2016-09-08</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>4</pretID>
-		<adherentID>7</adherentID>
-		<ouvrageID>9</ouvrageID>
-		<dateEmprunt>2016-09-04</dateEmprunt>
-		<dateRetourPrevue>2016-09-24</dateRetourPrevue>
-		<dateRetour>2016-09-15</dateRetour>
-	</pret>
-	<pret status="Retard">
-		<pretID>5</pretID>
-		<adherentID>3</adherentID>
-		<ouvrageID>8</ouvrageID>
-		<dateEmprunt>2016-09-05</dateEmprunt>
-		<dateRetourPrevue>2016-09-25</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>6</pretID>
-		<adherentID>24</adherentID>
-		<ouvrageID>13</ouvrageID>
-		<dateEmprunt>2016-09-06</dateEmprunt>
-		<dateRetourPrevue>2016-09-26</dateRetourPrevue>
-		<dateRetour>2016-09-20</dateRetour>
-	</pret>
-	<pret status="Retard">
-		<pretID>7</pretID>
-		<adherentID>22</adherentID>
-		<ouvrageID>16</ouvrageID>
-		<dateEmprunt>2016-09-07</dateEmprunt>
-		<dateRetourPrevue>2016-09-27</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>8</pretID>
-		<adherentID>14</adherentID>
-		<ouvrageID>13</ouvrageID>
-		<dateEmprunt>2016-09-08</dateEmprunt>
-		<dateRetourPrevue>2016-09-28</dateRetourPrevue>
-		<dateRetour>2016-09-16</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>9</pretID>
-		<adherentID>4</adherentID>
-		<ouvrageID>6</ouvrageID>
-		<dateEmprunt>2016-10-09</dateEmprunt>
-		<dateRetourPrevue>2016-09-29</dateRetourPrevue>
-		<dateRetour>2016-09-16</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>10</pretID>
-		<adherentID>17</adherentID>
-		<ouvrageID>14</ouvrageID>
-		<dateEmprunt>2016-09-10</dateEmprunt>
-		<dateRetourPrevue>2016-09-30</dateRetourPrevue>
-		<dateRetour>2016-10-06</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>11</pretID>
-		<adherentID>5</adherentID>
-		<ouvrageID>18</ouvrageID>
-		<dateEmprunt>2016-09-11</dateEmprunt>
-		<dateRetourPrevue>2016-10-01</dateRetourPrevue>
-		<dateRetour>2016-09-13</dateRetour>
-	</pret>
-	<pret status="Retard">
-		<pretID>12</pretID>
-		<adherentID>15</adherentID>
-		<ouvrageID>1</ouvrageID>
-		<dateEmprunt>2016-09-12</dateEmprunt>
-		<dateRetourPrevue>2016-10-02</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>13</pretID>
-		<adherentID>20</adherentID>
-		<ouvrageID>4</ouvrageID>
-		<dateEmprunt>2016-09-13</dateEmprunt>
-		<dateRetourPrevue>2016-10-03</dateRetourPrevue>
-		<dateRetour>2016-09-20</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>14</pretID>
-		<adherentID>21</adherentID>
-		<ouvrageID>6</ouvrageID>
-		<dateEmprunt>2016-09-14</dateEmprunt>
-		<dateRetourPrevue>2016-10-04</dateRetourPrevue>
-		<dateRetour>2016-10-04</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>15</pretID>
-		<adherentID>27</adherentID>
-		<ouvrageID>7</ouvrageID>
-		<dateEmprunt>2016-09-15</dateEmprunt>
-		<dateRetourPrevue>2016-10-05</dateRetourPrevue>
-		<dateRetour>2016-10-01</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>16</pretID>
-		<adherentID>4</adherentID>
-		<ouvrageID>11</ouvrageID>
-		<dateEmprunt>2016-09-16</dateEmprunt>
-		<dateRetourPrevue>2016-10-06</dateRetourPrevue>
-		<dateRetour>2016-09-20</dateRetour>
-	</pret>
-	<pret status="Retard">
-		<pretID>17</pretID>
-		<adherentID>6</adherentID>
-		<ouvrageID>20</ouvrageID>
-		<dateEmprunt>2016-09-17</dateEmprunt>
-		<dateRetourPrevue>2016-10-07</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>18</pretID>
-		<adherentID>28</adherentID>
-		<ouvrageID>14</ouvrageID>
-		<dateEmprunt>2016-09-18</dateEmprunt>
-		<dateRetourPrevue>2016-10-08</dateRetourPrevue>
-		<dateRetour>2016-10-13</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>19</pretID>
-		<adherentID>10</adherentID>
-		<ouvrageID>10</ouvrageID>
-		<dateEmprunt>2016-09-19</dateEmprunt>
-		<dateRetourPrevue>2016-10-09</dateRetourPrevue>
-		<dateRetour>2016-09-30</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>20</pretID>
-		<adherentID>4</adherentID>
-		<ouvrageID>15</ouvrageID>
-		<dateEmprunt>2016-09-20</dateEmprunt>
-		<dateRetourPrevue>2016-10-10</dateRetourPrevue>
-		<dateRetour>2016-10-04</dateRetour>
-	</pret>
-	<pret status="Retard">
-		<pretID>21</pretID>
-		<adherentID>7</adherentID>
-		<ouvrageID>13</ouvrageID>
-		<dateEmprunt>2016-09-21</dateEmprunt>
-		<dateRetourPrevue>2016-10-11</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>22</pretID>
-		<adherentID>17</adherentID>
-		<ouvrageID>10</ouvrageID>
-		<dateEmprunt>2016-09-22</dateEmprunt>
-		<dateRetourPrevue>2016-10-12</dateRetourPrevue>
-		<dateRetour>2016-10-03</dateRetour>
-	</pret>
-	<pret status="Retard">
-		<pretID>23</pretID>
-		<adherentID>12</adherentID>
-		<ouvrageID>8</ouvrageID>
-		<dateEmprunt>2016-09-23</dateEmprunt>
-		<dateRetourPrevue>2016-10-13</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="En_cours">
-		<pretID>24</pretID>
-		<adherentID>2</adherentID>
-		<ouvrageID>15</ouvrageID>
-		<dateEmprunt>2016-09-24</dateEmprunt>
-		<dateRetourPrevue>2016-10-14</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>25</pretID>
-		<adherentID>5</adherentID>
-		<ouvrageID>10</ouvrageID>
-		<dateEmprunt>2016-09-25</dateEmprunt>
-		<dateRetourPrevue>2016-10-15</dateRetourPrevue>
-		<dateRetour>2016-10-01</dateRetour>
-	</pret>
-	<pret status="En_cours">
-		<pretID>26</pretID>
-		<adherentID>29</adherentID>
-		<ouvrageID>14</ouvrageID>
-		<dateEmprunt>2016-09-26</dateEmprunt>
-		<dateRetourPrevue>2016-10-16</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>27</pretID>
-		<adherentID>25</adherentID>
-		<ouvrageID>15</ouvrageID>
-		<dateEmprunt>2016-09-27</dateEmprunt>
-		<dateRetourPrevue>2016-10-17</dateRetourPrevue>
-		<dateRetour>2016-10-03</dateRetour>
-	</pret>
-	<pret status="Rendu">
-		<pretID>28</pretID>
-		<adherentID>18</adherentID>
-		<ouvrageID>1</ouvrageID>
-		<dateEmprunt>2016-09-28</dateEmprunt>
-		<dateRetourPrevue>2016-10-18</dateRetourPrevue>
-		<dateRetour>2016-09-19</dateRetour>
-	</pret>
-	<pret status="En_cours">
-		<pretID>29</pretID>
-		<adherentID>11</adherentID>
-		<ouvrageID>3</ouvrageID>
-		<dateEmprunt>2016-09-29</dateEmprunt>
-		<dateRetourPrevue>2016-10-19</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-	<pret status="En_cours">
-		<pretID>30</pretID>
-		<adherentID>25</adherentID>
-		<ouvrageID>1</ouvrageID>
-		<dateEmprunt>2016-09-30</dateEmprunt>
-		<dateRetourPrevue>2016-10-20</dateRetourPrevue>
-		<dateRetour></dateRetour>
-	</pret>
-</prets>
+        <adherent etatAdhesion="Actif">
+            <adherentID>1</adherentID>
+            <prenom>Léonie</prenom>
+            <nom>Clement</nom>
+            <age>45</age>
+            <email>Sed.auctor@Inat.net</email>
+            <telephone>06 85 97 42 55</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>2</adherentID>
+            <prenom>Chloé</prenom>
+            <nom>Fernandez</nom>
+            <age>46</age>
+            <email>neque@risus.com</email>
+            <telephone>06 41 60 92 78</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>3</adherentID>
+            <prenom>Esteban</prenom>
+            <nom>Huet</nom>
+            <age>56</age>
+            <email>quis@elitelit.com</email>
+            <telephone>06 88 39 48 24</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>4</adherentID>
+            <prenom>Constant</prenom>
+            <nom>Remy</nom>
+            <age>59</age>
+            <email>elit.Etiam@mit.org</email>
+            <telephone>06 15 95 06 50</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>5</adherentID>
+            <prenom>Alice</prenom>
+            <nom>Perrin</nom>
+            <age>39</age>
+            <email>eu.ultrices.sit@mi.ca</email>
+            <telephone>06 70 95 06 70</telephone>
+        </adherent>
+        <adherent etatAdhesion="Termine">
+            <adherentID>6</adherentID>
+            <prenom>Pauline</prenom>
+            <nom>Dumas</nom>
+            <age>47</age>
+            <email>neque.vitae@acurna.net</email>
+            <telephone>06 95 15 87 31</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>7</adherentID>
+            <prenom>Clémence</prenom>
+            <nom>Benoit</nom>
+            <age>57</age>
+            <email>elit.pede@facilisis.net</email>
+            <telephone>06 59 02 03 74</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>8</adherentID>
+            <prenom>Romane</prenom>
+            <nom>Remy</nom>
+            <age>45</age>
+            <email>lobortis.quam.a@etmagnis.co.uk</email>
+            <telephone>06 64 37 97 81</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>9</adherentID>
+            <prenom>Colin</prenom>
+            <nom>Andre</nom>
+            <age>49</age>
+            <email>consectetuer@mit.org</email>
+            <telephone>06 34 45 29 00</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>10</adherentID>
+            <prenom>Jérémy</prenom>
+            <nom>Sanchez</nom>
+            <age>54</age>
+            <email>elit.pellentesque@mit.org</email>
+            <telephone>06 21 55 23 59</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>11</adherentID>
+            <prenom>Dorian</prenom>
+            <nom>Blanchard</nom>
+            <age>28</age>
+            <email>dictum@dolorvitae.org</email>
+            <telephone>06 22 89 16 97</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>12</adherentID>
+            <prenom>Gaspard</prenom>
+            <nom>Guyot</nom>
+            <age>58</age>
+            <email>mauris.Morbi.non@Quisque.com</email>
+            <telephone>06 60 79 02 60</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>13</adherentID>
+            <prenom>Léonard</prenom>
+            <nom>Germain</nom>
+            <age>42</age>
+            <email>ante@non.edu</email>
+            <telephone>06 96 52 14 90</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>14</adherentID>
+            <prenom>Jules</prenom>
+            <nom>Marty</nom>
+            <age>36</age>
+            <email>Suspendisse.sagittis@eclu.org</email>
+            <telephone>06 70 69 59 13</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>15</adherentID>
+            <prenom>Adrien</prenom>
+            <nom>Petit</nom>
+            <age>36</age>
+            <email>neque@quistristique.net</email>
+            <telephone>06 71 44 17 87</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>16</adherentID>
+            <prenom>Antonin</prenom>
+            <nom>Leroy</nom>
+            <age>54</age>
+            <email>ac.nulla@etlaciniavitae.edu</email>
+            <telephone>06 15 87 24 08</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>17</adherentID>
+            <prenom>Loevan</prenom>
+            <nom>Poulain</nom>
+            <age>22</age>
+            <email>eleifend.Cras.sed@gh.org</email>
+            <telephone>06 59 88 68 76</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>18</adherentID>
+            <prenom>Amélie</prenom>
+            <nom>Morin</nom>
+            <age>57</age>
+            <email>hel@Nullasemper.ca</email>
+            <telephone>06 92 31 25 67</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>19</adherentID>
+            <prenom>Mathéo</prenom>
+            <nom>Hubert</nom>
+            <age>36</age>
+            <email>elit.Aliquam@mit.co.uk</email>
+            <telephone>06 32 23 66 98</telephone>
+        </adherent>
+        <adherent etatAdhesion="Termine">
+            <adherentID>20</adherentID>
+            <prenom>Marie</prenom>
+            <nom>Guillaume</nom>
+            <age>34</age>
+            <email>fringilla@Aliquam.co.uk</email>
+            <telephone>06 75 25 74 82</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>21</adherentID>
+            <prenom>Titouan</prenom>
+            <nom>Marechal</nom>
+            <age>54</age>
+            <email>vel@cursus.edu</email>
+            <telephone>06 57 74 60 49</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>22</adherentID>
+            <prenom>Lina</prenom>
+            <nom>Simon</nom>
+            <age>31</age>
+            <email>quis.pede@mit.edu</email>
+            <telephone>06 42 94 85 36</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>23</adherentID>
+            <prenom>Cloé</prenom>
+            <nom>Pereira</nom>
+            <age>57</age>
+            <email>aliquam.eu@sit.com</email>
+            <telephone>06 34 84 17 68</telephone>
+        </adherent>
+        <adherent etatAdhesion="Termine">
+            <adherentID>24</adherentID>
+            <prenom>Capucine</prenom>
+            <nom>Poulain</nom>
+            <age>39</age>
+            <email>auctor.odio@aliquet.com</email>
+            <telephone>06 97 93 53 41</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>25</adherentID>
+            <prenom>Mathilde</prenom>
+            <nom>Klein</nom>
+            <age>41</age>
+            <email>nulla.Integer@mit.co.uk</email>
+            <telephone>06 77 00 05 13</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>26</adherentID>
+            <prenom>Salomé</prenom>
+            <nom>Perrot</nom>
+            <age>50</age>
+            <email>eu@rutrumFusce.edu</email>
+            <telephone>06 54 43 23 37</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>27</adherentID>
+            <prenom>Constant</prenom>
+            <nom>Poulain</nom>
+            <age>23</age>
+            <email>Donec.tempor@Craseutellus.edu</email>
+            <telephone>06 44 87 78 64</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>28</adherentID>
+            <prenom>Carla</prenom>
+            <nom>Jacquet</nom>
+            <age>22</age>
+            <email>nec.quam.Curabitur@irs.edu</email>
+            <telephone>06 94 47 11 75</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>29</adherentID>
+            <prenom>Maxence</prenom>
+            <nom>Albert</nom>
+            <age>48</age>
+            <email>Donec.fringilla.Donec@cursus.ca</email>
+            <telephone>06 88 69 66 38</telephone>
+        </adherent>
+        <adherent etatAdhesion="Actif">
+            <adherentID>30</adherentID>
+            <prenom>Zoé</prenom>
+            <nom>Dufour</nom>
+            <age>20</age>
+            <email>vitae.risus.Duis@nostraper.edu</email>
+            <telephone>06 96 96 28 39</telephone>
+        </adherent>
+    </adherents>
+    <ouvrages>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>1</ouvrageID>
+            <ISBN>2-266-11156-6</ISBN>
+            <titre>Le Printemps</titre>
+            <auteur>Paul Jean</auteur>
+            <anneePublication>2014</anneePublication>
+            <editeur>Flammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Restreinte">
+            <ouvrageID>2</ouvrageID>
+            <ISBN>2-999-14856-6</ISBN>
+            <titre>Le Capital</titre>
+            <auteur>Karl Marx</auteur>
+            <anneePublication>1820</anneePublication>
+            <editeur>Engels&amp;CO</editeur>
+            <langue>allemand</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>3</ouvrageID>
+            <ISBN>1-225-14856-7</ISBN>
+            <titre>L'été</titre>
+            <auteur>Paul Jean</auteur>
+            <anneePublication>2015</anneePublication>
+            <editeur>Flammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>4</ouvrageID>
+            <ISBN>3-465-78956-6</ISBN>
+            <titre>L'Automne</titre>
+            <auteur>Paul Jean</auteur>
+            <anneePublication>2016</anneePublication>
+            <editeur>Flammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>5</ouvrageID>
+            <ISBN>9-566-79988-6</ISBN>
+            <titre>Le DTD pour les nuls</titre>
+            <auteur>Hervé Mauroin</auteur>
+            <anneePublication>2009</anneePublication>
+            <editeur>Pearson</editeur>
+            <langue>anglais</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>6</ouvrageID>
+            <ISBN>9-965-55594-3</ISBN>
+            <titre>L'hiver</titre>
+            <auteur>Yves Sartrus</auteur>
+            <anneePublication>1954</anneePublication>
+            <editeur>Gammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>7</ouvrageID>
+            <ISBN>5-654-33569-2</ISBN>
+            <titre>La question</titre>
+            <auteur>Pierre Connu</auteur>
+            <anneePublication>1996</anneePublication>
+            <editeur>Gammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>8</ouvrageID>
+            <ISBN>3-656-93715-6</ISBN>
+            <titre>La réponse</titre>
+            <auteur>Louis Inconnu</auteur>
+            <anneePublication>1997</anneePublication>
+            <editeur>Flammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>8</ouvrageID>
+            <ISBN>9-777-45685-3</ISBN>
+            <titre>What is bullshit</titre>
+            <auteur>Lock James</auteur>
+            <anneePublication>2001</anneePublication>
+            <editeur>Pinguin</editeur>
+            <langue>anglais</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>9</ouvrageID>
+            <ISBN>9-656-66854-3</ISBN>
+            <titre>Après</titre>
+            <auteur>Alexandre Lent</auteur>
+            <anneePublication>1995</anneePublication>
+            <editeur>Flammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>10</ouvrageID>
+            <ISBN>6-996-35568-9</ISBN>
+            <titre>L'ecole</titre>
+            <auteur>Bernard Belletante</auteur>
+            <anneePublication>2010</anneePublication>
+            <editeur>Gammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>11</ouvrageID>
+            <ISBN>6-558-73851-6</ISBN>
+            <titre>Mein Kampf</titre>
+            <auteur>Adolf Hitler</auteur>
+            <anneePublication>1932</anneePublication>
+            <editeur>Die Spielgel</editeur>
+            <langue>allemand</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Restreinte">
+            <ouvrageID>12</ouvrageID>
+            <ISBN>6-584-66958-3</ISBN>
+            <titre>La Morale</titre>
+            <auteur>Pierre Lejuste</auteur>
+            <anneePublication>1933</anneePublication>
+            <editeur>Flammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>13</ouvrageID>
+            <ISBN>9-564-96589-3</ISBN>
+            <titre>L'ennui</titre>
+            <auteur>Tristan Morose</auteur>
+            <anneePublication>2016</anneePublication>
+            <editeur>Pinguin</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>14</ouvrageID>
+            <ISBN>3-636-69584-8</ISBN>
+            <titre>La douleur</titre>
+            <auteur>Jean-Luc Brutale</auteur>
+            <anneePublication>2011</anneePublication>
+            <editeur>Gammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>15</ouvrageID>
+            <ISBN>2-632-66358-6</ISBN>
+            <titre>A bout</titre>
+            <auteur>Jean-Luc Brutale</auteur>
+            <anneePublication>2012</anneePublication>
+            <editeur>Gammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>16</ouvrageID>
+            <ISBN>8-996-65832-6</ISBN>
+            <titre>Rien</titre>
+            <auteur>Paul Bona</auteur>
+            <anneePublication>2004</anneePublication>
+            <editeur>Flammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>17</ouvrageID>
+            <ISBN>6-556-59658-6</ISBN>
+            <titre>Bon</titre>
+            <auteur>Nicolas Mauvois</auteur>
+            <anneePublication>2013</anneePublication>
+            <editeur>Pinguin</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>18</ouvrageID>
+            <ISBN>6-665-99965-2</ISBN>
+            <titre>Le changement</titre>
+            <auteur>Francois Esparrat</auteur>
+            <anneePublication>1999</anneePublication>
+            <editeur>Gammarion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Restreinte">
+            <ouvrageID>19</ouvrageID>
+            <ISBN>2-654-666445-8</ISBN>
+            <titre>Who's next?</titre>
+            <auteur>Bob Dillard</auteur>
+            <anneePublication>2004</anneePublication>
+            <editeur>Pinguin</editeur>
+            <langue>anglais</langue>
+        </ouvrage>
+        <ouvrage disponibilite="Disponible">
+            <ouvrageID>20</ouvrageID>
+            <ISBN>3-333-58462-9</ISBN>
+            <titre>La fin</titre>
+            <auteur>Paul Bangé</auteur>
+            <anneePublication>2014</anneePublication>
+            <editeur>Flammrion</editeur>
+            <langue>français</langue>
+        </ouvrage>
+    </ouvrages>
+    <prets>
+        <pret status="Rendu">
+            <pretID>1</pretID>
+            <adherentID>23</adherentID>
+            <ouvrageID>11</ouvrageID>
+            <dateEmprunt>2016-09-01</dateEmprunt>
+            <dateRetourPrevue>2016-09-21</dateRetourPrevue>
+            <dateRetour>2016-09-29</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>2</pretID>
+            <adherentID>13</adherentID>
+            <ouvrageID>3</ouvrageID>
+            <dateEmprunt>2016-09-02</dateEmprunt>
+            <dateRetourPrevue>2016-22</dateRetourPrevue>
+            <dateRetour>2016-10-07</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>3</pretID>
+            <adherentID>30</adherentID>
+            <ouvrageID>3</ouvrageID>
+            <dateEmprunt>2016-09-03</dateEmprunt>
+            <dateRetourPrevue>2016-09-23</dateRetourPrevue>
+            <dateRetour>2016-09-08</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>4</pretID>
+            <adherentID>7</adherentID>
+            <ouvrageID>9</ouvrageID>
+            <dateEmprunt>2016-09-04</dateEmprunt>
+            <dateRetourPrevue>2016-09-24</dateRetourPrevue>
+            <dateRetour>2016-09-15</dateRetour>
+        </pret>
+        <pret status="Retard">
+            <pretID>5</pretID>
+            <adherentID>3</adherentID>
+            <ouvrageID>8</ouvrageID>
+            <dateEmprunt>2016-09-05</dateEmprunt>
+            <dateRetourPrevue>2016-09-25</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>6</pretID>
+            <adherentID>24</adherentID>
+            <ouvrageID>13</ouvrageID>
+            <dateEmprunt>2016-09-06</dateEmprunt>
+            <dateRetourPrevue>2016-09-26</dateRetourPrevue>
+            <dateRetour>2016-09-20</dateRetour>
+        </pret>
+        <pret status="Retard">
+            <pretID>7</pretID>
+            <adherentID>22</adherentID>
+            <ouvrageID>16</ouvrageID>
+            <dateEmprunt>2016-09-07</dateEmprunt>
+            <dateRetourPrevue>2016-09-27</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>8</pretID>
+            <adherentID>14</adherentID>
+            <ouvrageID>13</ouvrageID>
+            <dateEmprunt>2016-09-08</dateEmprunt>
+            <dateRetourPrevue>2016-09-28</dateRetourPrevue>
+            <dateRetour>2016-09-16</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>9</pretID>
+            <adherentID>4</adherentID>
+            <ouvrageID>6</ouvrageID>
+            <dateEmprunt>2016-10-09</dateEmprunt>
+            <dateRetourPrevue>2016-09-29</dateRetourPrevue>
+            <dateRetour>2016-09-16</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>10</pretID>
+            <adherentID>17</adherentID>
+            <ouvrageID>14</ouvrageID>
+            <dateEmprunt>2016-09-10</dateEmprunt>
+            <dateRetourPrevue>2016-09-30</dateRetourPrevue>
+            <dateRetour>2016-10-06</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>11</pretID>
+            <adherentID>5</adherentID>
+            <ouvrageID>18</ouvrageID>
+            <dateEmprunt>2016-09-11</dateEmprunt>
+            <dateRetourPrevue>2016-10-01</dateRetourPrevue>
+            <dateRetour>2016-09-13</dateRetour>
+        </pret>
+        <pret status="Retard">
+            <pretID>12</pretID>
+            <adherentID>15</adherentID>
+            <ouvrageID>1</ouvrageID>
+            <dateEmprunt>2016-09-12</dateEmprunt>
+            <dateRetourPrevue>2016-10-02</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>13</pretID>
+            <adherentID>20</adherentID>
+            <ouvrageID>4</ouvrageID>
+            <dateEmprunt>2016-09-13</dateEmprunt>
+            <dateRetourPrevue>2016-10-03</dateRetourPrevue>
+            <dateRetour>2016-09-20</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>14</pretID>
+            <adherentID>21</adherentID>
+            <ouvrageID>6</ouvrageID>
+            <dateEmprunt>2016-09-14</dateEmprunt>
+            <dateRetourPrevue>2016-10-04</dateRetourPrevue>
+            <dateRetour>2016-10-04</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>15</pretID>
+            <adherentID>27</adherentID>
+            <ouvrageID>7</ouvrageID>
+            <dateEmprunt>2016-09-15</dateEmprunt>
+            <dateRetourPrevue>2016-10-05</dateRetourPrevue>
+            <dateRetour>2016-10-01</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>16</pretID>
+            <adherentID>4</adherentID>
+            <ouvrageID>11</ouvrageID>
+            <dateEmprunt>2016-09-16</dateEmprunt>
+            <dateRetourPrevue>2016-10-06</dateRetourPrevue>
+            <dateRetour>2016-09-20</dateRetour>
+        </pret>
+        <pret status="Retard">
+            <pretID>17</pretID>
+            <adherentID>6</adherentID>
+            <ouvrageID>20</ouvrageID>
+            <dateEmprunt>2016-09-17</dateEmprunt>
+            <dateRetourPrevue>2016-10-07</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>18</pretID>
+            <adherentID>28</adherentID>
+            <ouvrageID>14</ouvrageID>
+            <dateEmprunt>2016-09-18</dateEmprunt>
+            <dateRetourPrevue>2016-10-08</dateRetourPrevue>
+            <dateRetour>2016-10-13</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>19</pretID>
+            <adherentID>10</adherentID>
+            <ouvrageID>10</ouvrageID>
+            <dateEmprunt>2016-09-19</dateEmprunt>
+            <dateRetourPrevue>2016-10-09</dateRetourPrevue>
+            <dateRetour>2016-09-30</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>20</pretID>
+            <adherentID>4</adherentID>
+            <ouvrageID>15</ouvrageID>
+            <dateEmprunt>2016-09-20</dateEmprunt>
+            <dateRetourPrevue>2016-10-10</dateRetourPrevue>
+            <dateRetour>2016-10-04</dateRetour>
+        </pret>
+        <pret status="Retard">
+            <pretID>21</pretID>
+            <adherentID>7</adherentID>
+            <ouvrageID>13</ouvrageID>
+            <dateEmprunt>2016-09-21</dateEmprunt>
+            <dateRetourPrevue>2016-10-11</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>22</pretID>
+            <adherentID>17</adherentID>
+            <ouvrageID>10</ouvrageID>
+            <dateEmprunt>2016-09-22</dateEmprunt>
+            <dateRetourPrevue>2016-10-12</dateRetourPrevue>
+            <dateRetour>2016-10-03</dateRetour>
+        </pret>
+        <pret status="Retard">
+            <pretID>23</pretID>
+            <adherentID>12</adherentID>
+            <ouvrageID>8</ouvrageID>
+            <dateEmprunt>2016-09-23</dateEmprunt>
+            <dateRetourPrevue>2016-10-13</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="En_cours">
+            <pretID>24</pretID>
+            <adherentID>2</adherentID>
+            <ouvrageID>15</ouvrageID>
+            <dateEmprunt>2016-09-24</dateEmprunt>
+            <dateRetourPrevue>2016-10-14</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>25</pretID>
+            <adherentID>5</adherentID>
+            <ouvrageID>10</ouvrageID>
+            <dateEmprunt>2016-09-25</dateEmprunt>
+            <dateRetourPrevue>2016-10-15</dateRetourPrevue>
+            <dateRetour>2016-10-01</dateRetour>
+        </pret>
+        <pret status="En_cours">
+            <pretID>26</pretID>
+            <adherentID>29</adherentID>
+            <ouvrageID>14</ouvrageID>
+            <dateEmprunt>2016-09-26</dateEmprunt>
+            <dateRetourPrevue>2016-10-16</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>27</pretID>
+            <adherentID>25</adherentID>
+            <ouvrageID>15</ouvrageID>
+            <dateEmprunt>2016-09-27</dateEmprunt>
+            <dateRetourPrevue>2016-10-17</dateRetourPrevue>
+            <dateRetour>2016-10-03</dateRetour>
+        </pret>
+        <pret status="Rendu">
+            <pretID>28</pretID>
+            <adherentID>18</adherentID>
+            <ouvrageID>1</ouvrageID>
+            <dateEmprunt>2016-09-28</dateEmprunt>
+            <dateRetourPrevue>2016-10-18</dateRetourPrevue>
+            <dateRetour>2016-09-19</dateRetour>
+        </pret>
+        <pret status="En_cours">
+            <pretID>29</pretID>
+            <adherentID>11</adherentID>
+            <ouvrageID>3</ouvrageID>
+            <dateEmprunt>2016-09-29</dateEmprunt>
+            <dateRetourPrevue>2016-10-19</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+        <pret status="En_cours">
+            <pretID>30</pretID>
+            <adherentID>25</adherentID>
+            <ouvrageID>1</ouvrageID>
+            <dateEmprunt>2016-09-30</dateEmprunt>
+            <dateRetourPrevue>2016-10-20</dateRetourPrevue>
+            <dateRetour></dateRetour>
+        </pret>
+    </prets>
 </bibliotheque>
