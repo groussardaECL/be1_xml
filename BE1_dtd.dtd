@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bibliotheque[
+
+	<!ELEMENT adherents(adherent+)>
+		<!ELEMENT adherent(adherentID,prenom,nom,age,email,telephone)>
+
+		<!ELEMENT adherentID (#PCDATA)>
+		<!ELEMENT prenom (#PCDATA)>
+		<!ELEMENT nom (#PCDATA)>
+		<!ELEMENT age (#PCDATA)>
+		<!ELEMENT email (#PCDATA)>
+		<!ELEMENT telephone (#PCDATA)>
+
+	<!ELEMENT ouvrages(ouvrage+)>
+		<!ELEMENT ouvrage(ouvrageID,ISBN,titre,auteur,anneePublication,editeur,langue)>
+
+		<!ELEMENT ouvrageID (#PCDATA)>
+		<!ELEMENT ISBN (#PCDATA)>
+		<!ELEMENT titre (#PCDATA)>
+		<!ELEMENT auteur (#PCDATA)>
+		<!ELEMENT anneePublication (#PCDATA)>
+		<!ELEMENT editeur (#PCDATA)>
+		<!ELEMENT langue (#PCDATA)>
+
+
+
+	<!ELEMENT prets(pret+)>
+		<ELEMENT pret(pretID,adherentID,ouvrageID,dateEmprunt,dateRetourPrevu,dateRetour)>
+
+		<!ELEMENT pretID (#PCDATA)>
+		<!ELEMENT adherentID (#PCDATA)>
+		<!ELEMENT ouvrageID (#PCDATA)>
+		<!ELEMENT dateEmprunt (#PCDATA)>
+		<!ELEMENT dateRetourPrevu (#PCDATA)>
+		<!ELEMENT dateRetour (#PCDATA)>
+
+
+<!ATTLIST adherent 
+						   adherentID CDATA #required 
+						   prenom CDATA #required 
+						   nom CDATA #required 
+						   age CDATA #required 
+						   email CDATA #required 
+						   telephone CDATA #required 
+
+		>
+
+<!ATTLIST ouvrage 
+						   ouvrageID CDATA #required 
+						   ISBN CDATA #required 
+						   titre CDATA #required 
+						   auteur CDATA #required 
+						   anneePublication CDATA #required 
+						   editeur CDATA #required
+						   langue (français | anglais | allemand) "français" 
+
+		>
+
+<!ATTLIST pret 
+						   pretID CDATA #required 
+						   adherentID CDATA #required 
+						   ouvrageID CDATA #required 
+						   dateEmprunt CDATA #required 
+						   
+		>
+
+	]>
