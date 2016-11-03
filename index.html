@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" href="index.css">
+	<head>
+		<meta charset="utf-8"/>
+		<title>
+			CR BE1 - XML
+		</title>
+	</head>
+	<body>
+	<div class="header">
+		<h1>
+			Compte-Rendu de BE1 - XML
+		</h1>
+		<h1>
+			Representation et manipulation de données structurées
+		</h1>
+		<h2>
+			Benoit CASTRES &amp; Arnaud GROUSSARD
+			<br/>
+			14 Octobre 2016
+		</h2>
+	</div>
+	<h2>
+		Introduction
+	</h2>
+	<p>
+	Ce Bureau d'Etudes consitue une première occasion d'utiliser XML dans le cadre d'un projet. 
+	Il s'agit ici de créer une application représentant les données d'une bibliothèque.
+	</p>
+	<h3>
+		Vocabulaire et Structure
+	</h3>
+	<h3>
+		Création du document XML, et peuplement données
+	</h3>
+	<h3>
+		Création de la feuille de style CSS
+	</h3>
+	<h3>
+		Ajout de la DTD
+	</h3>
+	<h3>
+		Difficultés &amp; Limites du couple XML-CSS 
+	</h3>
+	<h3>
+		Conclusion 
+	</h3>
+
+	Un seul document XML<br/>
+	Element Racine : bibliotheque<br/>
+		adherents<br/>
+			adherent, avec attribut : etatAdhesion (En cours, Termine&#c3a9;e)<br/>
+			adherentID, type INT<br/>
+			nom, type VARCHAR<br/>
+			prenom, type VARCHAR<br/>
+			age, type INT<br/>
+		ouvrages<br/>
+			ouvrage, avec attribut : disponibilite (Empruntable, Restreinte)<br/>
+			ouvrageID, type INT<br/>
+			ISBN, type VARCHAR<br/>
+			titre, type VARCHAR<br/>
+			auteur, type VARCHAR<br/>
+			anneePublication, type DATE<br/>
+			editeur, type VARCHAR<br/>
+			langue, type VARCHAR<br/>
+		prets<br/>
+			pret, avec attribut : statut (En cours, Rendu, Retard)<br/>
+			pretID,type INT<br/>
+			adherentID,type INT<br/>
+			ouvrageID,type INT<br/>
+			dateEmprunt, type DATE<br/>
+			dateRetourPrevue, type DATE<br/>
+			deteRetour, type DATE<br/>
+	</body>
+</html>

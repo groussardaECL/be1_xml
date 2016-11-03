@@ -1,0 +1,105 @@
+adherents {
+    background-color: #DDDDDD;
+    width: 100%;
+    display: table ;
+}
+adherent{
+	display: table-row;
+}
+adherentID{
+	display: table-cell;
+}
+
+prenom{
+	display: table-cell;
+}
+
+nom{
+	display: table-cell;
+}
+
+age{
+	display: table-cell;
+}
+
+email{
+	display: table-cell;
+}
+
+telephone{
+	display: table-cell;
+}
+
+ouvrages{
+    background-color: #AAAAAA;
+    width: 100%;
+    display: table ;
+}
+ouvrage{
+	display: table-row;
+}
+ouvrageID{
+	display: table-cell;
+}
+
+ISBN{
+	display: table-cell;
+}
+
+titre{
+	display: table-cell;
+}
+
+auteur{
+	display: table-cell;
+}
+
+anneePublication{
+	display: table-cell;
+}
+
+editeur{
+	display: table-cell;
+}
+langue{
+	display: table-cell;
+}
+prets{
+    width: 100%;
+    display: table ;
+}
+pret{
+	display: table-row;
+}
+pret.Retard{
+	background-color: red;
+}
+pret.Rendu{
+	background-color: green;
+}
+pret.En_cours{
+	background-color: yellow;
+}
+pretID{
+	display: table-cell;
+}
+
+adherentID{
+	display: table-cell;
+}
+
+ouvrageID{
+	display: table-cell;
+}
+
+dateEmprunt{
+	display: table-cell;
+}
+
+dateRetourPrevue{
+	display: table-cell;
+}
+
+dateRetour{
+	display: table-cell;
+}
