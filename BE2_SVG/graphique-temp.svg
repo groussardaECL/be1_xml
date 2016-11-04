@@ -4,9 +4,12 @@
         "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-     <svg width="180" height="180" viewBox="-50 -50 270 270">
-        <g font-family="Verdana"
-           font-size="5">
+     <svg width="720" height="720" viewBox="-50 -50 720 720">
+        <text x="-30" y="-10" font-family="Arial" font-size="10" stroke="black" stroke-width="0.8">TEMPERATURE ET PRECIPITATIONS</text>
+        <text x="225" y="-10" font-family="Arial" font-size="10" stroke="black" stroke-width="0.8">A PARIS LE 4/11</text>
+        <rect x="-30" y="0" width="330" height="310" fill="none" stroke="#696969" stroke-width="1"></rect>
+        <g transform="scale(1.5,1.5)">
+        <g font-family="Arial" font-size="5">
             <g id="referentiel">
                 <g id="arrow">
                     <line x1="10" y1="30" x2="10" y2="170"
@@ -245,6 +248,7 @@
                             stroke="darkblue" stroke-width="1" fill="blue"/>
                 </g>
             </g>
+        </g>
         </g>
      </svg>
 </svg>
