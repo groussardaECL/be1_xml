@@ -5,45 +5,48 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/xml ; charset=UTF-8"></meta>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
 		<title>BE 2 Groussard Devaux - Représentation et manipulation de données structurées</title>
+
 	</head>
 
 	<body>
-		<h1>Compte-rendu de BE 2 - Représentation et manipulation de données structurées</h1>
-		<h4>DEVAUX Camille / GROUSSARD Arnaud</h4>
-		<h4>le 04/11/2016</h4>
-
-		<p>
-			<br />
-			<br />
-		</p>
-
-		<h2>Réaliser un document SVG</h2>
-
-		<ul>
-			<li>Démarche suivie et raisonnement</li>
-		</ul>
-
-
-		<p>Pour ce BE, nous avons choisir de réaliser le travail 1. Version Minimale.</p>
-		<p>Aucun de nous deux ne maîtrisant assez un langage de programmation pour réaliser en 4h les autres travaux proposés, il nous paraissait plus sage de se concentrer essentiellement sur SVG, l'objectif même de ce BE.</p>
-
-
-		<p>Nous avons réalisé deux graphiques avec SVG. Ces graphiques reprennent les données de Météo France, pour Paris, au 4 Novembre. Le premier graphique présente d'un côté les températures annoncées, inscrites dans un intervalle d'erreur (T° min, T° max), et de l'autre l'évolution des précipations par heure. Le deuxième graphique donne une plage de direction et vitesse que prendra le vent au 4 novembre, et celles prévues au 5 novembre.</p>
-
-		<object type="image/svg+xml" data="graphique-vent.svg" width="360" height="360">
-		</object>
-
-		<p><i>N.B. La déclaration des polygones du graphique a posé problème dans le sens où nous avons défini notre graphique et son référentiel par des rotations. En revanche, les différents points des polygones se définissent en coordonnées cartésiennes. Nous sommes donc passés par un excel (voir dans le dossier), en appliquant cos/sin/.. pour obtenir ces coordonnées.</i></p>
-
-
-
-
-
-
-
-
-
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<h1>Compte-rendu de BE 2 - Représentation et manipulation de données structurées</h1>
+						<h4>DEVAUX Camille / GROUSSARD Arnaud</h4>
+						<h4>le 04/11/2016</h4>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container">
+				<p>
+					Petite introduction : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			<div class="container">
+				<h2>Réaliser un document SVG</h2>
+				<ul>
+					<li>Démarche suivie et raisonnement</li>
+				</ul>
+					<div class="col-xs-12 col-md-6">
+						<p>Pour ce BE, nous avons choisir de réaliser le travail 1 - Version Minimale.</p>
+						<p>Aucun de nous deux ne maîtrisant assez un langage de programmation pour réaliser en 4h les autres travaux proposés, il nous paraissait plus sage de se concentrer essentiellement sur SVG, l'objectif même de ce BE.</p>
+						<p>Nous avons réalisé deux graphiques avec SVG. Ces graphiques reprennent les données de Météo France, pour Paris, au 4 Novembre :</p>
+						<ol>
+							<li>Le premier graphique présente d'un côté les températures annoncées, inscrites dans un intervalle d'erreur (T° min, T° max), et de l'autre l'évolution des précipations par heure.</li>
+							<li>Le deuxième graphique donne une plage de direction et vitesse que prendra le vent au 4 novembre, et celles prévues au 5 novembre.</li>
+						</ol>
+					</div>
+				<div class="col-xs-12 col-md-6">
+					<object type="image/svg+xml" data="graphique-vent.svg" width="360" height="360"></object>
+				<p><i>N.B. La déclaration des polygones du graphique a posé problème dans le sens où nous avons défini notre graphique et son référentiel par des rotations. En revanche, les différents points des polygones se définissent en coordonnées cartésiennes. Nous sommes donc passés par un excel (voir dans le dossier), en appliquant cos/sin/.. pour obtenir ces coordonnées.</i></p>
+				</div>
+			</div>
+		</div>
 	</body>
-
 </html>
