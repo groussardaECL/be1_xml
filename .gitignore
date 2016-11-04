@@ -33,6 +33,7 @@ GitHub.sublime-settings
 
 # User-specific stuff:
 .idea/workspace.xml
+.idea/workspace.xml___jb_tmp___
 .idea/tasks.xml
 .idea/dictionaries
 .idea/vcs.xml
