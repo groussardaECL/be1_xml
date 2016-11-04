@@ -1,0 +1,48 @@
+
+
+#dataventfriday {
+	fill:#4682B4;
+	stroke:#87CEFA;
+	opacity: 0.8;
+}
+
+#dataventsaturday {
+	fill:#66CDAA;
+	stroke:#00FA9A;
+	opacity: 0.8;
+}
+
+#referentialvent {
+	stroke:#696969;
+}
+
+text {
+	font-family:Arial;
+}
+
+#legendeventfriday {
+	fill:#4682B4;
+	stroke:#87CEFA;
+	opacity: 0.8;
+}
+
+#legendeventsaturday {
+	fill:#66CDAA;
+	stroke:#00FA9A;
+	opacity: 0.8;
+}
+
+#cadrevent {
+	fill:none;
+	stroke:#696969;
+	stroke-width:2;
+}
+
+#titrevent { 
+	stroke-width:1.5;
+}
+
+#cerclevent {
+	fill:#FFFFF0;
+	stroke:none;
+}

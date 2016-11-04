@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<?xml-stylesheet href="graphique-vent.css" type="text/css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ <g stroke="black" fill="black" transform="translate(360,360)">
+
+  <text x="-340" y="-320" font-size="20" id="titrevent">DIRECTION ET VITESSE DU VENT (KM/H)</text>
+  <text x="200" y="-320" font-size="20" id="titrevent">A PARIS LE 4/11</text>
+
+  <rect x="-340" y="-310" width="690" height="650" id="cadrevent"></rect>
+  <circle x="0" y="0" r="210" id="cerclevent"></circle>
+
+  <g id="referentialvent">
+   <g transform="scale(2,2)">
+    <g id="arrowvent">
+     <line x1="-120" y1="0" x2="120" y2="0" stroke-width="0.7"></line>
+     <polygon points="118,-1 120,0 118,1 119,0 118,-1" stroke-width="0.5"></polygon>
+     <polygon points="-118,-1 -120,0 -118,1 -119,0 -118,-1" stroke-width="0.5"></polygon>
+     	<polyline points="20,2 20,-2" stroke-width="0.7" id="grad"></polyline>
+		<g transform="translate(20,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+     	<g transform="translate(40,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+     	<g transform="translate(60,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+     	<g transform="translate(80,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+		<g transform="translate(-40,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+     	<g transform="translate(-60,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+     	<g transform="translate(-80,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+     	<g transform="translate(-100,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+     	<g transform="translate(-120,0)">
+     		<use xlink:href="#grad"></use>
+     	</g>
+    </g>
+    <g transform="rotate(90)">
+     <use xlink:href="#arrowvent"></use>
+    </g>
+    <g transform="rotate(45)">
+     <use xlink:href="#arrowvent"></use>
+    </g>
+    <g transform="rotate(-45)">
+     <use xlink:href="#arrowvent"></use>
+    </g>
+    <g transform="rotate(-22.5)">
+     <use xlink:href="#arrowvent"></use>
+    </g>
+    <g transform="rotate(22.5)">
+     <use xlink:href="#arrowvent"></use>
+    </g>
+    <g transform="rotate(-67.5)">
+     <use xlink:href="#arrowvent"></use>
+    </g>
+    <g transform="rotate(67.5)">
+     <use xlink:href="#arrowvent"></use>
+    </g>
+    <circle cx="0" cy="0" r="0.5"></circle>
+   	<text x="-140" y="5" stroke="none">O</text>
+   	<text x="130" y="5" stroke="none">E</text>
+   	<text x="-5" y="-130" stroke="none" fill="#CD5C5C">N</text>
+   	<text x="-5" y="140" stroke="none">S</text>
+   </g>
+   <g id="echellevent">
+   	<text x="10" y="15" stroke="none">0</text>
+   	<text x="40" y="15" stroke="none">4</text>
+   	<text x="80" y="15" stroke="none">8</text>
+   	<text x="120" y="15" stroke="none">12</text>
+   	<text x="160" y="15" stroke="none">16</text>
+   	<text x="200" y="15" stroke="none">20</text>
+   </g>
+  </g>
+
+  <g id="dataventfriday">
+  	<polygon points="0,80 30.61467459,73.9103626 0,110 -61.22934918,147.8207252 -26.78784027,64.67156728"></polygon>
+  </g>
+  <g id="dataventsaturday">
+  	<polygon points="-98.99494937,98.99494937 -129.3431346,53.57568053 -140,0 -147.8207252,-61.22934918 -73.9103626,-30.61467459 -73.9103626,30.61467459"></polygon>
+  </g>
+
+  <g>
+  	<rect x="150" y="290" width="40" height="20" id="legendeventfriday"></rect>
+  	<text x="210" y="305" stroke="none">Au 4 Novembre</text>
+  </g>
+
+   <g>
+  	<rect x="150" y="260" width="40" height="20" id="legendeventsaturday"></rect>
+  	<text x="210" y="275" stroke="none">Prévision au 5/11</text>
+   </g>
+ </g>
+
+</svg>
