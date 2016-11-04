@@ -1,20 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<p>Scalable Vector Graphics</p>
-<h3>Coordonées utilisateur</h3>
-<p>Viewbox pour visualiser le schéma</p>
-<p>Height & Width pour la taille de l'image</p>
-<p>Polyline != Polygon</p>
-<p>Possible de faire des lettres mathématiquement - A utiliser pour peu de texte</p>
-<p>Masques (clip), gradients, courbes</p>
-<p>Transformations prédéfinies : Translation, changement d'echelle, rotation, déformation</p>
-<p>Transformations par matrices de transformation. Attention, les produits matriciels ne sont pas tous commutatifs.</p>
-<p>Stylesheet applicable avec CSS</p>
-<p>A partir de données, faire un graphique sous SVG.</p>
-</body>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml-stylesheet type="text/css" href="index.css"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/xml ; charset=UTF-8"/>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
+		<title>BE 2 Groussard Devaux - Représentation et manipulation de données structurées</title>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-12">
+						<h1>Compte-rendu de BE 2 - Représentation et manipulation de données structurées</h1>
+						<h4>DEVAUX Camille / GROUSSARD Arnaud</h4>
+						<h4>le 04/11/2016</h4>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container">
+				<p>
+					Petite introduction : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			<div class="container">
+				<div class="col-xs-12 col-md-6">
+					<h2>Réaliser un document SVG</h2>
+					<ul>
+						<li>Démarche suivie et raisonnement</li>
+					</ul>
+					<p>Pour ce BE, nous avons choisir de réaliser le travail 1 - Version Minimale.</p>
+					<p>Aucun de nous deux ne maîtrisant assez un langage de programmation pour réaliser en 4h les autres
+						travaux proposés, il nous paraissait plus sage de se concentrer essentiellement sur SVG,
+						l'objectif même de ce BE.</p>
+					<p>Nous avons réalisé deux graphiques avec SVG. Ces graphiques s'inspirent des données de Météo
+						France, pour Paris, au 4 Novembre :</p>
+					<ol>
+						<li>Le premier graphique présente d'un côté les températures annoncées, inscrites dans un
+							intervalle d'erreur (T° min, T° max), et de l'autre l'évolution des précipations par
+							heure.</li>
+						<li>Le deuxième graphique donne une plage de direction et vitesse que prendra le vent au 4
+							novembre, et celles prévues au 5 novembre.</li>
+					</ol>
+					<h2>Difficultés rencontrées lors de l'élaboration des graphiques</h2>
+					<p>
+                        Avant de commencer à coder nos graphiques SVG, nous nous sommes inspirés d'autres graphiques et
+                        les avons dessinés, en essayant de respecter l'échelle, dans un cadre 180*180. Après avoir pris
+                        connaissance des différents éléments de base (<i>line, rect, circle, etc.)</i> ainsi que de
+                        leurs attributs et options, nous avons commencés à réaliser nos graphiques en parallèle.
+                    </p>
+					<p>
+                        Afin de s'initier à SVG et de réaliser en même le travail demandé, nous avons procédés de façon
+                        itérative, en analysant les résultats des ajouts et modifications apportés à notre code.
+                    </p>
+                    <p>
+                        Nous avons alors été confrontés à deux problèmes que nous n'avions pas immédiatement remarqué :
+                    </p>
+                    <ul>
+                        <li>
+                            Au fur et à mesure que nous ajoutions des éléments au graphique, nous nous sommes rendus
+                            compte que nous avions mal évalué la taille des éléments, et en particulier, la finesse des
+                            traits que nous pouvions tracer avec une taille d'image de 180px par 180px. Nous avons alors
+                            augmenté la taille de la <i>ViewBox</i>dans un premier temps.<br></br>Lors de la
+                            finalisation de nos graphiques, nous avons par la suite augmenté la taille de l'image vers
+                            720*720, et utilisé la transformationsuivante pour réadapter la taille de nos éléments :
+                            <i>transform="scale(1.5,1.5)"</i>
+                        </li>
+                        <li>
+                            L'origine du graphique se situe dans le coin supérieur gauche de notre graphique. Cette
+                            disposition n'était pas naturel pour tracer un graphique contenant des courbes, pour le premier
+                            graphique présentant la température et les précipitations, et pour construire la rose des vents
+                            pour le second graphique.<br></br>Nous avons changé le système de coordonnées pour la rose des vents
+                            grâce à la transformation suivante : <i>transform="translate(360,360)"</i>
+                        </li>
+                    </ul>
+					<p>
+                        Nous avons aussi remarqué que les éléments du graphique se superposent en fonction de leur place
+                        dans le document SVG. Les premiers éléments dans le code se retrouvent dans l'arrière-plan du
+                        graphique, alors que les derniers éléments se retrouvent au premier plan du graphique.
+                        Ainsi, après avoir ajouté les courbes et aires correspondantes aux données à la fin du code, nos axes
+                        se sont retrouvés parfois masqués par les jeux de données. Pour y remédier, il nous a fallu réorganiser
+                        notre code pour que les axes se situe vers la fin du code, et qu'ils apparaissent ainsi au premier plan.
+                    </p>
+                    <p>
+                        Nous avons voulu lisser nos courbes, en particulier celle de la température. L'élément <i>path</i>
+                        de SVG permet de réaliser des courbes constituées de lignes ou de courbes.<br></br>
+                        Les éléments courbes sont des courbes cubique ou quadratiques de Bezier. Cependant nous avons eu des
+                        difficultés à lisser notre courbe (comme avec une fonction d'extrapolation sous Excel). <br/>
+                        Nous avons fait quelques tests pour essayer de faire coller les courbes de Beziers à la quinzaine de
+                        points dont nous disposions, avec peu de succès. Il semblerait que la meilleure solution soit
+                        d'extrapoler la courbe lissée sous Excel et d'importer ensuite un nombre plus important de points
+                        dans l'élément <i>path</i> et d'y tracer une courbe de Bezier.
+                    </p>
+				</div>
+                <div class="col-xs-12 col-md-6">
+                    <object type="image/svg+xml" data="graphique-vent.svg" width="360" height="360"/>
+                    <a href="graphique-vent.svg" target="_blank" >Agrandir</a>
+                    <a href="graphique-vent.xhtml" target="_blank" >Agrandir</a>
+                    <p>
+                        <i>N.B. La déclaration des polygones du graphique a posé problème dans le sens où nous avons défini
+                        notre graphique et son référentiel par des rotations. En revanche, les différents points des
+                        polygones se définissent en coordonnées cartésiennes. Nous sommes donc passés par un
+                        <a href="Points pour polygone -data- Direction Vent.xlsx">tableur</a>, en appliquant les formules
+                        trigonométriques ordinaires pour obtenir ces coordonnées en base cartésienne.</i>
+                    </p>
+                </div>
+			</div>
+		</div>
+	</body>
 </html>

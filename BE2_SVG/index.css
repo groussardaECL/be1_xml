@@ -5,6 +5,7 @@ body{
 	font-family: Helvetica;
 	color:#555444;
 	padding:30px;
+	text-align: justify;
 }
 
 h1{
@@ -20,7 +21,7 @@ h2{
 }
 
 li{
-	color: #84d7b8;
+	/*color: #84d7b8;*/
 }
 
 small{
