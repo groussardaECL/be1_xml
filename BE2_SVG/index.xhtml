@@ -6,37 +6,29 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/xml ; charset=UTF-8"/>
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
-		<title>BE 2 Groussard Devaux - Représentation et manipulation de données structurées</title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto" rel="stylesheet"/>
+        <title>BE2 - SVG</title>
 	</head>
 
 	<body>
-		<header class="header">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-12">
-						<h1>Compte-rendu de BE 2 - Représentation et manipulation de données structurées</h1>
-						<h4>DEVAUX Camille / GROUSSARD Arnaud</h4>
-						<h4>le 04/11/2016</h4>
-					</div>
-				</div>
-			</div>
-		</header>
+        <div class="container">
+            <div id="holder-header">
+                <div id="header" class="col-xs-12 col-md-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <h1>Scalable Vector Graphics</h1>
+                            <p>by DEVAUX Camille &amp; GROUSSARD Arnaud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<div class="main">
 			<div class="container">
-				<p>
-					Petite introduction : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-					in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-					occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
-			<div class="container">
-				<div class="col-xs-12 col-md-6">
-					<h2>Réaliser un document SVG</h2>
-					<ul>
-						<li>Démarche suivie et raisonnement</li>
-					</ul>
+				<div class="col-xs-12 col-md-8">
+					<div class="titre">
+                        <h3>Démarche suivie et raisonnement</h3>
+                    </div>
 					<p>Pour ce BE, nous avons choisir de réaliser le travail 1 - Version Minimale.</p>
 					<p>Aucun de nous deux ne maîtrisant assez un langage de programmation pour réaliser en 4h les autres
 						travaux proposés, il nous paraissait plus sage de se concentrer essentiellement sur SVG,
@@ -50,8 +42,10 @@
 						<li>Le deuxième graphique donne une plage de direction et vitesse que prendra le vent au 4
 							novembre, et celles prévues au 5 novembre.</li>
 					</ol>
-					<h2>Difficultés rencontrées lors de l'élaboration des graphiques</h2>
-					<p>
+                    <div class="titre">
+					    <h3>Difficultés rencontrées lors de l'élaboration des graphiques</h3>
+                    </div>
+                    <p>
                         Avant de commencer à coder nos graphiques SVG, nous nous sommes inspirés d'autres graphiques et
                         les avons dessinés, en essayant de respecter l'échelle, dans un cadre 180*180. Après avoir pris
                         connaissance des différents éléments de base (<i>line, rect, circle, etc.)</i> ainsi que de
@@ -61,6 +55,9 @@
                         Afin de s'initier à SVG et de réaliser en même le travail demandé, nous avons procédés de façon
                         itérative, en analysant les résultats des ajouts et modifications apportés à notre code.
                     </p>
+                    <div class="titre">
+                        <h4>Géométrie et dimensions du canevas SVG</h4>
+                    </div>
                     <p>
                         Nous avons alors été confrontés à deux problèmes géométriques que nous n'avions pas immédiatement remarqué :
                     </p>
@@ -82,7 +79,11 @@
                             grâce à la transformation suivante : <i>transform="translate(360,360)"</i>
                         </li>
                     </ul>
-					<p>
+					<div class="titre">
+                        <h4>Superposition des éléments</h4>
+                    </div>
+
+                    <p>
                         Nous avons aussi remarqué que les éléments du graphique se superposent en fonction de leur place
                         dans le document SVG. Les premiers éléments dans le code se retrouvent dans l'arrière-plan du
                         graphique, alors que les derniers éléments se retrouvent au premier plan du graphique.
@@ -90,6 +91,9 @@
                         se sont retrouvés parfois masqués par les jeux de données. Pour y remédier, il nous a fallu réorganiser
                         notre code pour que les axes se situe vers la fin du code, et qu'ils apparaissent ainsi au premier plan.
                     </p>
+                    <div class="titre">
+                        <h4>Courbes de Bezier</h4>
+                    </div>
                     <p>
                         Nous avons voulu lisser nos courbes, en particulier celle de la température. L'élément <i>path</i>
                         de SVG permet de réaliser des courbes constituées de lignes ou de courbes.<br></br>
@@ -101,20 +105,30 @@
                         dans l'élément <i>path</i> et d'y tracer une courbe de Bezier.
                     </p>
 				</div>
-                <div class="col-xs-12 col-md-6">
-                    <h2>Températures et Précipitations</h2>
-                    <object type="image/svg+xml" data="graphique-temp.svg" width="90%"/>
-                    <h2>Rose des vents</h2>
-                    <object type="image/svg+xml" data="graphique-vent.svg" width="90%"/>
-                    <a href="graphique-vent.svg" target="_blank" >Agrandir</a>
-                    <a href="graphique-vent.xhtml" target="_blank" >Agrandir</a>
-                    <p>
-                        <i>N.B. La déclaration des polygones du graphique a posé problème dans le sens où nous avons défini
-                        notre graphique et son référentiel par des rotations. En revanche, les différents points des
-                        polygones se définissent en coordonnées cartésiennes. Nous sommes donc passés par un
-                        <a href="Points pour polygone -data- Direction Vent.xlsx">tableur</a>, en appliquant les formules
-                        trigonométriques ordinaires pour obtenir ces coordonnées en base cartésienne.</i>
-                    </p>
+                <div class="col-xs-12 col-md-4">
+                    <div class="div_padding">
+                        <div class="titre">
+                            <h3>Températures et Précipitations</h3>
+                        </div>
+                        <object type="image/svg+xml" data="graphique-temp.svg" width="90%"/>
+                        <div class="agrandir">
+                            <a href="graphique-temp.svg" target="_blank" >Agrandir le graphique</a>
+                        </div>
+                        <div class="titre">
+                            <h3>Rose des vents</h3>
+                        </div>
+                        <object type="image/svg+xml" data="graphique-vent.svg" width="90%"/>
+                        <div class="agrandir">
+                            <a href="graphique-vent.svg" target="_blank" >Agrandir le graphique</a>
+                        </div>
+                        <p>
+                            <i>N.B. La déclaration des polygones du graphique a posé problème dans le sens où nous avons défini
+                                notre graphique et son référentiel par des rotations. En revanche, les différents points des
+                                polygones se définissent en coordonnées cartésiennes. Nous sommes donc passés par un
+                                <a href="Points pour polygone -data- Direction Vent.xlsx">tableur</a>, en appliquant les formules
+                                trigonométriques ordinaires pour obtenir ces coordonnées en base cartésienne.</i>
+                        </p>
+                    </div>
                 </div>
 			</div>
 		</div>
