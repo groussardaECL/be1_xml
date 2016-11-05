@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <?xml-stylesheet href="graphique-vent.css" type="text/css"?>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" xmlns:xlink="http://www.w3.org/1999/xlink">
 
  <g stroke="black" fill="black" transform="translate(360,360)">
 
-  <text x="-340" y="-320" font-size="20" id="titrevent">DIRECTION ET VITESSE DU VENT (KM/H)</text>
-  <text x="200" y="-320" font-size="20" id="titrevent">A PARIS LE 4/11</text>
+  <text x="-340" y="-320" font-size="20" class="titrevent">DIRECTION ET VITESSE DU VENT (KM/H)</text>
+  <text x="200" y="-320" font-size="20" class="titrevent">A PARIS LE 4/11</text>
 
   <rect x="-340" y="-310" width="690" height="650" id="cadrevent"></rect>
-  <circle x="0" y="0" r="210" id="cerclevent"></circle>
+  <circle cx="0" cy="0" r="210" id="cerclevent"></circle>
 
   <g id="referentialvent">
    <g transform="scale(2,2)">
