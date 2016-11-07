@@ -1,105 +1,74 @@
-adherents {
-    background-color: #DDDDDD;
-    width: 100%;
-    display: table ;
-}
-adherent{
-	display: table-row;
-}
-adherentID{
-	display: table-cell;
+/*Global*/
+*{
+	font-family: arial;
 }
 
+/*Adherents*/
+adherents {
+    background-color: #ffffff;
+    width: 90%;
+	display: block;
+	margin:10px;
+	horiz-align: middle;
+}
+adherents::before{
+	content:"Liste des adhérents";
+	font-size: 2em;
+	text-align: center;
+	margin: 15px;
+	display: block;
+}
+
+adherent{
+	display: inline-block;
+	padding-bottom: 10px;
+	border: solid 1px black;
+	padding: 10px;
+	margin:10px;
+	width: 300px;
+	horiz-align: middle;
+	box-shadow: 2px 2px 5px 4px #a7a7a7;
+}
+adherent[etatAdhesion="Termine"] {
+
+}
+adherent[etatAdhesion="Actif"] {
+}
+adherentID{
+	display: none;
+	text-align: right;
+}
 prenom{
-	display: table-cell;
+	display: inline;
+	text-align: center;
 }
 
 nom{
-	display: table-cell;
+	display: inline;
+	text-align: right;
 }
 
 age{
-	display: table-cell;
+	display: table-row;
+}
+age::before{
+	content: "Âge : ";
+	display: inline;
 }
 
 email{
-	display: table-cell;
+	display: table-row;
 }
 
 telephone{
-	display: table-cell;
+	display: table-row;
+	text-align: center;
 }
 
 ouvrages{
-    background-color: #AAAAAA;
-    width: 100%;
-    display: table ;
+	display: table;
 }
+
 ouvrage{
 	display: table-row;
-}
-ouvrageID{
-	display: table-cell;
-}
-
-ISBN{
-	display: table-cell;
-}
-
-titre{
-	display: table-cell;
-}
-
-auteur{
-	display: table-cell;
-}
-
-anneePublication{
-	display: table-cell;
-}
-
-editeur{
-	display: table-cell;
-}
-langue{
-	display: table-cell;
-}
-prets{
-    width: 100%;
-    display: table ;
-}
-pret{
-	display: table-row;
-}
-pret.Retard{
-	background-color: red;
-}
-pret.Rendu{
-	background-color: green;
-}
-pret.En_cours{
-	background-color: yellow;
-}
-pretID{
-	display: table-cell;
-}
-
-adherentID{
-	display: table-cell;
-}
-
-ouvrageID{
-	display: table-cell;
-}
-
-dateEmprunt{
-	display: table-cell;
-}
-
-dateRetourPrevue{
-	display: table-cell;
-}
-
-dateRetour{
-	display: table-cell;
 }

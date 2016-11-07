@@ -9,3 +9,7 @@ img{
 	margin-bottom: 20px;
 	border: solid #000000 5px;
 }
+
+p{
+	text-align: justify;
+}

@@ -33,7 +33,7 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>r</th>
+                            <th></th>
                             <th><b>adherent</b></th>
                             <th><b>ouvrage</b></th>
                             <th><b>pret</b></th>
@@ -60,7 +60,7 @@
                                 </ul>
                             </td>
                         </tr>
-                        <tr>git
+                        <tr>
                             <td>
                                 Elements
                             </td>
@@ -99,8 +99,24 @@
                             <td></td>
                         </tr>
                         </tbody>
-
                     </table>
+                    <p>L'une des grande difficulté à laquelle nous avons été confrontés a été le choix entre attributs ou éléments. Nous avons finalement choisi de ne garder comme attributs que ce qui représente les états, qui seront variables. Ainsi, <i>etatAdhesion</i>, qui caractérise la validité de l'adhésion à la bibliothèque d'un des membres, <i>disponibilite</i> pour caractériser si un ouvrage est emprunté, et <i>statut</i> qui caractérise si un prêt est en cours, en retard, ou terminé.</p>
+                    <p>Les autres données ont été caractérisées par des éléments balise.</p>
+                    <h3>Création du document XML/XHTML et peuplement de données</h3>
+                    <p>Nous avons commencé par créer le document XML en testant l'architecture qui nous avions précédemment avec un ou deux adhérents, ouvrages, et prêts. Nous avons ainsi découvert l'outil de validation XML du W3C. Nous avons passé plus de temps que prévu à comprendre les déclarations nécessaires avec les bonnes URI (XML, DOCTYPE, Encodage) au début du document XML et XHTML.</p>
+                    <p>Pour accélérer notre peuplement du document XML, notamment des catégories <i>adherents</i> et <i>prets</i> nous avons utilisé un site de génération de données <a href="http://www.generatedata.com/">Generata Data</a>. Les données sur les <i>ouvrages</i> ont été créées à la main. Quelques problèmes ont du être corrigés quand nous avons fusionnés les différentes catégories dans le document XML principale.</p>
+                    <a href="document.xml"><img src="file_xml.png"/></a>
+                    <p>Accéder au document XML</p>
+                    <h3>Création de la feuille de style CSS pour le document XML</h3>
+                    <p>Nous avons stylisé le document XML en le dupliquant et en rajoutant un lien vers une feuille de style externe.</p>
+                    <p>Nous avons choisi de ne pas modifier notre document XML initial pour le faire correspondre à nos attentes et aux limitations de CSS.</p>
+                    <ul>
+                        <li>Il ne semble pas possible de réorganiser l'ordre des éléments avec une feuille de style CSS. L'ordre doit rester le même que celui défini au départ dans le document XML.</li>
+                        <li>Pour créer des titres de sections, nous avons utilisé la commande CSS <i>content="titre à afficher"</i>. Cependant, cela ne nous semble pas optimal de stocker du contenu spécifique à ce document dans une feuille de style externe.</li>
+
+                    </ul>
+                    <h3>Réalisation de la DTD</h3>
+                    <p>La DTD nous permet d'ajouter des conditions supplémentaires sur les données acceptables pour chaque élément et préciser davantage leur structure et leur syntaxe. </p>
                 </div>
                 <div class="col-xs-12 col-md-4">
 

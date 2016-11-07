@@ -1,5 +1,6 @@
 <?xml version="1.0"  encoding="utf-8"?>
 <?xml-stylesheet href="document_css.css" type="text/css"?>
+
 <bibliotheque>
 	<adherents>
 			<adherent etatAdhesion="Actif">
@@ -244,7 +245,6 @@
 	</adherent>
 </adherents>
 <ouvrages>
-	<ouvrages>
 	<ouvrage disponibilite="Disponible">
 		<ouvrageID>1</ouvrageID>
 		<ISBN>2-266-11156-6</ISBN>
@@ -434,7 +434,6 @@
 		<editeur>Flammrion</editeur>
 		<langue>français</langue>
 	</ouvrage>
-</ouvrages>
 </ouvrages>
 <prets>
 	<pret status="Rendu">
