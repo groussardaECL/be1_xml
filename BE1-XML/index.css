@@ -1,6 +1,11 @@
-div[class="header"]{
-	text-align: center;
-	color: #ffffff;
-	background-color: #96172e;
-	padding: 8px;
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+img{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid #000000 5px;
 }

@@ -4,12 +4,112 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
     <head>
-		<meta http-equiv="Content-Type" content="text/xml ; charset=UTF-8"/>
-		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
+        <meta http-equiv="Content-Type" content="text/xml ; charset=UTF-8"/>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
         <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto" rel="stylesheet"/>
-        <title>BE2 - SVG</title>
-	</head>
+        <title>BE1-XML</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="holder-header">
+                <div id="header" class="col-xs-12 col-md-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <h1>Extensible Markup Languages</h1>
+                            <p>by CASTRES Benoit &amp; GROUSSARD Arnaud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="col-xs-12 col-md-8">
+                    <h3>Démarche suivie et raisonnement</h3>
+                    <p>Ce BE constitue une première occasion d'utiliser XML dans le cadre d'un projet. Il s'agit ici de créer une application représentant les données d'une bibliothèque. Afin de réaliser cette application, nous allons dans un premier temps définir la structure arborescente de notre document XML. Il s'agira ensuite de peupler le document avec quelques données, tout en veillant à ce que celui-ci soit valide du point de vue de XML.</p>
+                    <h2>Vocabulaire et structure</h2>
+                    <p>La structure de la bibliothèque s'articule autour de 3 éléments principaux, descendants directes de l'élément racine <i>bibliotheque</i>. Les éléments <i>adherents</i>, <i>ouvrages</i> et <i>prets</i> sont respectivement les parents d'une multitude d'éléments <i>adherent</i>, <i>ouvrage</i> et <i>pret</i>.</p>
+                    <img src="BE1_XML.png"/>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>r</th>
+                            <th><b>adherent</b></th>
+                            <th><b>ouvrage</b></th>
+                            <th><b>pret</b></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                Attributs
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>etatAdhesion</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>disponibilite</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>statut</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>git
+                            <td>
+                                Elements
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>adherentID</li>
+                                    <li>prenom</li>
+                                    <li>nom</li>
+                                    <li>age</li>
+                                    <li>email</li>
+                                    <li>telephone</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>ouvrageID</li>
+                                    <li>ISBN</li>
+                                    <li>titre</li>
+                                    <li>auteur</li>
+                                    <li>anneePublication</li>
+                                    <li>editeur</li>
+                                    <li>annee</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>pretID</li>
+                                    <li>adherentID</li>
+                                    <li>dateEmprunt</li>
+                                    <li>dateRetourPrevue</li>
+                                    <li>dateRetour</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        </tbody>
 
+                    </table>
+                </div>
+                <div class="col-xs-12 col-md-4">
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+<!--
 	<body>
         <div class="container">
             <div id="holder-header">
@@ -112,27 +212,77 @@
                         </div>
                         <object type="image/svg+xml" data="graphique-temp.svg" width="90%"/>
                         <div class="agrandir">
-                            <!--L'attribut target n'est pas comptable avec XHTML 1.0 Strict, mais bien pratique-->
-                            <a href="graphique-temp.svg" target="_blank" >Agrandir le graphique</a>
-                        </div>
-                        <div class="titre">
-                            <h3>Rose des vents</h3>
-                        </div>
-                        <object type="image/svg+xml" data="graphique-vent.svg" width="90%"/>
-                        <div class="agrandir">
-                            <!--L'attribut target n'est pas comptable avec XHTML 1.0 Strict, mais bien pratique-->
-                            <a href="graphique-vent.svg" target="_blank" >Agrandir le graphique</a>
-                        </div>
-                        <p>
-                            <i>N.B. La déclaration des polygones du graphique a posé problème dans le sens où nous avons défini
-                                notre graphique et son référentiel par des rotations. En revanche, les différents points des
-                                polygones se définissent en coordonnées cartésiennes. Nous sommes donc passés par un
-                                <a href="Points pour polygone -data- Direction Vent.xlsx">tableur</a>, en appliquant les formules
-                                trigonométriques ordinaires pour obtenir ces coordonnées en base cartésienne.</i>
-                        </p>
-                    </div>
-                </div>
-			</div>
-		</div>
-	</body>
+
+    <a href="graphique-temp.svg" target="_blank" >Agrandir le graphique</a>
+    </div>
+    <div class="titre">
+        <h3>Rose des vents</h3>
+    </div>
+    <object type="image/svg+xml" data="graphique-vent.svg" width="90%"/>
+    <div class="agrandir">
+
+        <a href="graphique-vent.svg" target="_blank" >Agrandir le graphique</a>
+    </div>
+    <p>
+        <i>N.B. La déclaration des polygones du graphique a posé problème dans le sens où nous avons défini
+            notre graphique et son référentiel par des rotations. En revanche, les différents points des
+            polygones se définissent en coordonnées cartésiennes. Nous sommes donc passés par un
+            <a href="Points pour polygone -data- Direction Vent.xlsx">tableur</a>, en appliquant les formules
+            trigonométriques ordinaires pour obtenir ces coordonnées en base cartésienne.</i>
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </body>
+    -->
+<!--
+	Ce Bureau d'Etudes consitue une première occasion d'utiliser XML dans le cadre d'un projet. 
+	Il s'agit ici de créer une application représentant les données d'une bibliothèque.
+	</p>
+	<h3>
+		Vocabulaire et Structure
+	</h3>
+	<h3>
+		Création du document XML, et peuplement données
+	</h3>
+	<h3>
+		Création de la feuille de style CSS
+	</h3>
+	<h3>
+		Ajout de la DTD
+	</h3>
+	<h3>
+		Difficultés &amp; Limites du couple XML-CSS 
+	</h3>
+	<h3>
+		Conclusion 
+	</h3>
+
+	Un seul document XML<br/>
+	Element Racine : bibliotheque<br/>
+		adherents<br/>
+			adherent, avec attribut : etatAdhesion (En cours, Termine&#c3a9;e)<br/>
+			adherentID, type INT<br/>
+			nom, type VARCHAR<br/>
+			prenom, type VARCHAR<br/>
+			age, type INT<br/>
+		ouvrages<br/>
+			ouvrage, avec attribut : disponibilite (Empruntable, Restreinte)<br/>
+			ouvrageID, type INT<br/>
+			ISBN, type VARCHAR<br/>
+			titre, type VARCHAR<br/>
+			auteur, type VARCHAR<br/>
+			anneePublication, type DATE<br/>
+			editeur, type VARCHAR<br/>
+			langue, type VARCHAR<br/>
+		prets<br/>
+			pret, avec attribut : statut (En cours, Rendu, Retard)<br/>
+			pretID,type INT<br/>
+			adherentID,type INT<br/>
+			ouvrageID,type INT<br/>
+			dateEmprunt, type DATE<br/>
+			dateRetourPrevue, type DATE<br/>
+			deteRetour, type DATE<br/>
+	</body>-->
 </html>
