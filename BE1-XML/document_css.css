@@ -39,36 +39,100 @@ adherentID{
 	text-align: right;
 }
 prenom{
-	display: inline;
+	display: inline ;
 	text-align: center;
+	align-content: center;
+	font-size: 1.5em;
 }
 
 nom{
 	display: inline;
 	text-align: right;
+	align-content: center;
+	font-size: 1.5em;
 }
 
 age{
 	display: table-row;
+	padding:5px;
+	text-align: left;
 }
 age::before{
 	content: "Âge : ";
 	display: inline;
+	font-weight: bold;
 }
 
 email{
 	display: table-row;
+	padding:5px;
+	text-align: left;
 }
-
+email::before{
+	content:"Email : ";
+	font-weight: bold;
+	display: inline;
+}
+telephone::before{
+	content:"Téléphone : ";
+	font-weight: bold;
+	display: inline;
+}
 telephone{
 	display: table-row;
-	text-align: center;
+	text-align: left;
+	padding:5px;
+	margin:5px;
 }
 
 ouvrages{
 	display: table;
+	background-color: #ffffff;
+	width: 90%;
+	margin:10px;
 }
 
+ouvrages::before{
+	content:"Liste des ouvrages";
+	font-size: 2em;
+	text-align: center;
+	margin: 15px;
+	display: table;
+	text-align: center;
+}
 ouvrage{
 	display: table-row;
+	padding:4px;
+	border-top: solid 1px #000000;
+	border-collapse: collapse;
+}
+ouvrageID{
+	display: none;
+}
+ISBN{
+	display: table-cell;
+	padding:10 px;
+}
+
+titre{
+	display: table-cell;
+}
+auteur{
+	display: table-cell;
+}
+anneePublication{
+	display: table-cell;
+}
+editeur{
+	display: table-cell;
+}
+annee{
+	display: table-cell;
+}
+
+prets::before{
+	content:"Liste des prêts"
+}
+prets{
+	display: table;
 }
