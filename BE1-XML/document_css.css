@@ -6,10 +6,12 @@
 /*Adherents*/
 adherents {
     background-color: #ffffff;
-    width: 90%;
+    width: auto;
 	display: block;
 	margin:10px;
 	horiz-align: middle;
+	margin-left: 5%;
+	margin-right:5%;
 }
 adherents::before{
 	content:"Liste des adhérents";
@@ -29,8 +31,11 @@ adherent{
 	horiz-align: middle;
 	box-shadow: 2px 2px 5px 4px #a7a7a7;
 }
-adherent[etatAdhesion="Termine"] {
-
+adherent[etatAdhesion="Termine"]>nom {
+	color: #B42429;
+}
+adherent[etatAdhesion="Termine"]>prenom {
+	color: #b42429;
 }
 adherent[etatAdhesion="Actif"] {
 }
@@ -89,7 +94,8 @@ ouvrages{
 	display: table;
 	background-color: #ffffff;
 	width: 90%;
-	margin:10px;
+	margin-left: 5%;
+	margin-right:5%;
 }
 
 ouvrages::before{
@@ -131,11 +137,18 @@ annee{
 }
 
 prets::before{
-	content:"Liste des prêts"
+	content:"Liste des prêts";
+	font-size: 2em;
+	text-align: center;
+	margin: 15px;
+	display: block;
+	text-align: center;
 }
 prets{
 	display: table;
 	width:90%;
+	margin-left: 5%;
+	margin-right:5%;
 }
 pret{
 	display: table-row;
@@ -143,10 +156,12 @@ pret{
 	border-bottom:dashed 1px #000000;
 }
 pretID{
-	display: none;
+	display: table-row;
 }
 adherentID{
 	display:table-cell;
+	width: 5%;
+	content:adherentID=adherentID>name;
 }
 
 ouvrageID{
@@ -160,4 +175,13 @@ dateRetourPrevue{
 }
 dateRetour{
 	display: table-cell;
+}
+pret[status="Retard"]>dateRetour {
+	background-color: #deb1b4;
+}
+pret[status="Rendu"]>dateRetour {
+	background-color: #acdeaa;
+}
+pret[status="En_cours"]>dateRetour {
+	background-color: #aac1de;
 }

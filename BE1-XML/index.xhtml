@@ -15,7 +15,7 @@
                 <div id="header" class="col-xs-12 col-md-12">
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
-                            <h1>Extensible Markup Languages</h1>
+                            <h1>Extensible Markup Language</h1>
                             <p>by CASTRES Benoit &amp; GROUSSARD Arnaud</p>
                         </div>
                     </div>
@@ -96,9 +96,6 @@
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
                         </tbody>
                     </table>
                     <p>L'une des grande difficulté à laquelle nous avons été confrontés a été le choix entre attributs ou éléments. Nous avons finalement choisi de ne garder comme attributs que ce qui représente les états, qui seront variables. Ainsi, <i>etatAdhesion</i>, qui caractérise la validité de l'adhésion à la bibliothèque d'un des membres, <i>disponibilite</i> pour caractériser si un ouvrage est emprunté, et <i>statut</i> qui caractérise si un prêt est en cours, en retard, ou terminé.</p>
@@ -109,8 +106,10 @@
                     <a href="document.xml"><img src="file_xml.png"/></a>
                     <p>Accéder au document XML</p>
                     <h3>Création de la feuille de style CSS pour le document XML</h3>
+                    <p>Le document XML sans feuille de stye s'affiche de manière relativement basique. Contrairement à HTML, il n'y a pas de mise en forme prédfini pour un document XML, il faut donc réaliser la mise en forme pour tous les éléments du document, à partir de zéro.</p>
                     <p>Nous avons stylisé le document XML en le dupliquant et en rajoutant un lien vers une feuille de style externe.</p>
                     <p>Nous avons choisi de ne pas modifier notre document XML initial pour le faire correspondre à nos attentes et aux limitations de CSS.</p>
+                    <p>Voici une liste des éléments que nous avons pu rencontrer</p>
                     <ul>
                         <li>Il ne semble pas possible de réorganiser l'ordre des éléments avec une feuille de style CSS. L'ordre doit rester le même que celui défini au départ dans le document XML.</li>
                         <li>Pour créer des titres de sections, nous avons utilisé la commande CSS <i>content="titre à afficher"</i>. Cependant, cela ne nous semble pas optimal de stocker du contenu spécifique à ce document dans une feuille de style externe.</li>
