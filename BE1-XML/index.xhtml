@@ -89,6 +89,7 @@
                                 <ul>
                                     <li>pretID</li>
                                     <li>adherentID</li>
+                                    <li>ouvrageID</li>
                                     <li>dateEmprunt</li>
                                     <li>dateRetourPrevue</li>
                                     <li>dateRetour</li>
@@ -114,7 +115,7 @@
                         <li>Il ne semble pas possible de réorganiser l'ordre des éléments avec une feuille de style CSS. L'ordre doit rester le même que celui défini au départ dans le document XML.</li>
                         <li>Pour créer des titres de sections, nous avons utilisé la commande CSS <i>content="titre à afficher"</i>. Cependant, cela ne nous semble pas optimal de stocker du contenu spécifique à ce document dans une feuille de style externe.</li>
                         <li>Nous n'avons pas pas non plus pu ajouter des titres de colonnes dans les tableaux que nous voulions faire, car les tableaux sont générés à partir des données du document XML.</li>
-
+                        <li>Il ne nous pas été possible de stylisé les éléments différements de l'endroit où il apparaissaient dans le document XML. Le sélecteur pour <i>ouvrageID</i> ne peut pas être différencié entre <i>adherentID</i> dans la branche <i>adherents</i>, et <i>adherentID</i> dans la branche <i>prets</i>.</li>
                     </ul>
                     <h3>Réalisation de la DTD</h3>
                     <p>La DTD nous permet d'ajouter des conditions supplémentaires sur les données acceptables pour chaque élément et préciser davantage leur structure et leur syntaxe. </p>

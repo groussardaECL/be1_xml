@@ -449,7 +449,7 @@
 		<adherentID>13</adherentID>
 		<ouvrageID>3</ouvrageID>
 		<dateEmprunt>2016-09-02</dateEmprunt>
-		<dateRetourPrevue>2016-22</dateRetourPrevue>
+		<dateRetourPrevue>2016-09-22</dateRetourPrevue>
 		<dateRetour>2016-10-07</dateRetour>
 	</pret>
 	<pret status="Rendu">

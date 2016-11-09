@@ -36,7 +36,7 @@ adherent[etatAdhesion="Actif"] {
 }
 adherentID{
 	display: none;
-	text-align: right;
+	text-align: left;
 }
 prenom{
 	display: inline ;
@@ -97,7 +97,7 @@ ouvrages::before{
 	font-size: 2em;
 	text-align: center;
 	margin: 15px;
-	display: table;
+	display: block;
 	text-align: center;
 }
 ouvrage{
@@ -135,4 +135,29 @@ prets::before{
 }
 prets{
 	display: table;
+	width:90%;
+}
+pret{
+	display: table-row;
+	height:25px;
+	border-bottom:dashed 1px #000000;
+}
+pretID{
+	display: none;
+}
+adherentID{
+	display:table-cell;
+}
+
+ouvrageID{
+	display: table-cell;
+}
+dateEmprunt{
+	display:table-cell;
+}
+dateRetourPrevue{
+	display: table-cell;
+}
+dateRetour{
+	display: table-cell;
 }
