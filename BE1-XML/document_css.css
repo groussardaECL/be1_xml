@@ -8,8 +8,6 @@ adherents {
     background-color: #ffffff;
     width: auto;
 	display: block;
-	margin:10px;
-	horiz-align: middle;
 	margin-left: 5%;
 	margin-right:5%;
 }
@@ -17,8 +15,11 @@ adherents::before{
 	content:"Liste des adhérents";
 	font-size: 2em;
 	text-align: center;
-	margin: 15px;
+	padding: 15px;
 	display: block;
+	border-bottom: 1px solid #000;
+	margin-bottom:20px;
+	font-weight: bold;
 }
 
 adherent{
@@ -29,15 +30,47 @@ adherent{
 	margin:10px;
 	width: 300px;
 	horiz-align: middle;
-	box-shadow: 2px 2px 5px 4px #a7a7a7;
+	box-shadow: 2px 2px 4px 3px #a7a7a7;
 }
-adherent[etatAdhesion="Termine"]>nom {
-	color: #B42429;
+adherent:hover{
+	display: inline-block;
+	padding-bottom: 10px;
+	border: solid 1px black;
+	padding: 10px;
+	margin:10px;
+	width: 300px;
+	horiz-align: middle;
+	box-shadow: 4px 4px 6px 4px #a7a7a7;
 }
-adherent[etatAdhesion="Termine"]>prenom {
-	color: #b42429;
+adherent[etatAdhesion="Termine"]>adherentID {
+	color: #9f0002;
 }
-adherent[etatAdhesion="Actif"] {
+
+adherent[etatAdhesion="Termine"]>adherentID::after{
+	content:"\00A0 - Abonnement expiré";
+	text-align: right;
+	display: inline-block;
+	align-content: right;
+	margin:auto;
+	color: #9f0002;
+}
+adherent[etatAdhesion="Termine"] {
+	box-shadow: none;
+	border: solid 1px #9c9a9c;
+	color: #5B5A5B;
+
+}
+adherent[etatAdhesion="Actif"]>adherentID {
+	color: #06b904;
+}
+
+adherent[etatAdhesion="Actif"]>adherentID::after{
+	content:"\00A0 - Abonnement actif";
+	text-align: right;
+	display: inline-block;
+	align-content: right;
+	margin:auto;
+	color: #06b904;
 }
 adherentID{
 	display: none;
@@ -56,7 +89,6 @@ nom{
 	align-content: center;
 	font-size: 1.5em;
 }
-
 age{
 	display: table-row;
 	padding:5px;
@@ -89,52 +121,58 @@ telephone{
 	padding:5px;
 	margin:5px;
 }
-
-ouvrages{
-	display: table;
-	background-color: #ffffff;
-	width: 90%;
-	margin-left: 5%;
-	margin-right:5%;
-}
-
-ouvrages::before{
+adherents::after{
 	content:"Liste des ouvrages";
 	font-size: 2em;
 	text-align: center;
-	margin: 15px;
+	padding: 15px;
 	display: block;
-	text-align: center;
+	border-bottom: solid 2px #000;
+	margin-top:30px;
+	margin-bottom: 20px;
+	font-weight:bold;
+}
+
+ouvrages{
+	display: table;
+	width:90%;
+	margin-left: 5%;
+	margin-right:5%;
 }
 ouvrage{
 	display: table-row;
-	padding:4px;
-	border-top: solid 1px #000000;
-	border-collapse: collapse;
+	padding:5px;
 }
+ouvrage:nth-child(2n+1)  {
+	background-color: #eeeeee;
+}
+
 ouvrageID{
-	display: none;
+	display: table-cell;
 }
 ISBN{
-	display: table-cell;
-	padding:10 px;
+	display:table-cell;
 }
 
 titre{
 	display: table-cell;
+	padding:10px;
 }
 auteur{
-	display: table-cell;
+	display:table-cell;
 }
-anneePublication{
+annnePublication{
 	display: table-cell;
 }
 editeur{
 	display: table-cell;
 }
-annee{
-	display: table-cell;
+langue{
+display: table-cell;
 }
+
+ouvrage:hover{
+	background-color: #eae581}
 
 prets::before{
 	content:"Liste des prêts";
@@ -152,20 +190,23 @@ prets{
 }
 pret{
 	display: table-row;
-	height:25px;
-	border-bottom:dashed 1px #000000;
+	padding:5px;
 }
+pret:nth-child(2n+1)  {
+	background-color: #eeeeee;
+}
+
 pretID{
-	display: table-row;
+	display: table-cell;
 }
 adherentID{
 	display:table-cell;
 	width: 5%;
-	content:adherentID=adherentID>name;
 }
 
 ouvrageID{
 	display: table-cell;
+	padding:10px;
 }
 dateEmprunt{
 	display:table-cell;
@@ -176,12 +217,19 @@ dateRetourPrevue{
 dateRetour{
 	display: table-cell;
 }
-pret[status="Retard"]>dateRetour {
-	background-color: #deb1b4;
+pret[status="Retard"]>dateRetour::before {
+	content:"En retard";
+	color: maroon;
+	display: table-cell;
 }
-pret[status="Rendu"]>dateRetour {
-	background-color: #acdeaa;
+	pret[status="Rendu"]>dateRetour {
+		color: forestgreen;
 }
-pret[status="En_cours"]>dateRetour {
-	background-color: #aac1de;
+pret[status="En_cours"]>dateRetour::before {
+	content:"En cours ";
+	color: navy;
+	display: table-cell;
+}
+pret:hover{
+	background-color: #eae581;
 }
