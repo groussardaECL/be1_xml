@@ -2,14 +2,36 @@
 	font-family: 'Roboto', sans-serif;
 }
 
-img{
-	display: block;
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: solid #000000 5px;
-}
-
 p{
 	text-align: justify;
+}
+
+#schema-structure{
+	width: 95%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+
+.img-thumbnail{
+	width: 70px;
+	margin:5px;
+}
+
+.link-logo{
+	text-align: center;
+	display: inline-block;
+	padding: 20px;
+}
+
+.side-menu{
+	position: fixed;
+}
+.shortcut{
+	padding:10px;
+}
+.wrap{
+	text-align: center;
 }

@@ -29,7 +29,7 @@
                     <p>Ce BE constitue une première occasion d'utiliser XML dans le cadre d'un projet. Il s'agit ici de créer une application représentant les données d'une bibliothèque. Afin de réaliser cette application, nous allons dans un premier temps définir la structure arborescente de notre document XML. Il s'agira ensuite de peupler le document avec quelques données, tout en veillant à ce que celui-ci soit valide du point de vue de XML.</p>
                     <h2>Vocabulaire et structure</h2>
                     <p>La structure de la bibliothèque s'articule autour de 3 éléments principaux, descendants directes de l'élément racine <i>bibliotheque</i>. Les éléments <i>adherents</i>, <i>ouvrages</i> et <i>prets</i> sont respectivement les parents d'une multitude d'éléments <i>adherent</i>, <i>ouvrage</i> et <i>pret</i>.</p>
-                    <img src="BE1_XML.png"/>
+                    <img id="schema-structure" src="BE1_XML.png" alt="Structure du document XML"/>
                     <table class="table">
                         <thead>
                         <tr>
@@ -82,7 +82,7 @@
                                     <li>auteur</li>
                                     <li>anneePublication</li>
                                     <li>editeur</li>
-                                    <li>annee</li>
+                                    <li>langue</li>
                                 </ul>
                             </td>
                             <td>
@@ -103,203 +103,132 @@
                     <h3>Création du document XML/XHTML et peuplement de données</h3>
                     <p>Nous avons commencé par créer le document XML en testant l'architecture qui nous avions précédemment avec un ou deux adhérents, ouvrages, et prêts. Nous avons ainsi découvert l'outil de validation XML du W3C. Nous avons passé plus de temps que prévu à comprendre les déclarations nécessaires avec les bonnes URI (XML, DOCTYPE, Encodage) au début du document XML et XHTML.</p>
                     <p>Pour accélérer notre peuplement du document XML, notamment des catégories <i>adherents</i> et <i>prets</i> nous avons utilisé un site de génération de données <a href="http://www.generatedata.com/">Generata Data</a>. Les données sur les <i>ouvrages</i> ont été créées à la main. Quelques problèmes ont du être corrigés quand nous avons fusionnés les différentes catégories dans le document XML principale.</p>
-                    <a href="document.xml"><img src="file_xml.png"/></a>
-                    <p>Accéder au document XML</p>
+                    <div class="wrap">
+                        <div class="link-logo">
+                            <a href="document.xml"><img class="img-thumbnail" src="file_xml.png" alt="DOCUMENT.XML"/><br/>Accéder au document XML</a>
+
+                        </div>
+                    </div>
                     <h3>Création de la feuille de style CSS pour le document XML</h3>
-                    <p>Le document XML sans feuille de stye s'affiche de manière relativement basique. Contrairement à HTML, il n'y a pas de mise en forme prédfini pour un document XML, il faut donc réaliser la mise en forme pour tous les éléments du document, à partir de zéro.</p>
+                    <p>Le document XML sans feuille de style s'affiche de manière relativement basique. Contrairement à HTML, il n'y a pas de mise en forme prédéfini pour un document XML, il faut donc réaliser la mise en forme pour tous les éléments du document, à partir de zéro.</p>
                     <p>Nous avons stylisé le document XML en le dupliquant et en rajoutant un lien vers une feuille de style externe.</p>
                     <p>Nous avons choisi de ne pas modifier notre document XML initial pour le faire correspondre à nos attentes et aux limitations de CSS.</p>
-                    <p>Voici une liste des éléments que nous avons pu rencontrer</p>
+                    <div class="wrap">
+                        <div class="link-logo">
+                            <a href="document_css.xml"><img class="img-thumbnail" src="file_xml2.png" alt="DOCUMENT_CSS.XML"/><br/>Document XML stylisé</a>
+                        </div>
+                        <div class="link-logo">
+                            <a href="document_css.css"><img class="img-thumbnail" src="file_css.png" alt="DOCUMENT_CSS.CSS"/><br/>Document CSS</a>
+                        </div>
+                    </div>
+                    <p>Voici les limites que nous avons pu rencontrer</p>
                     <ul>
-                        <li>Il ne semble pas possible de réorganiser l'ordre des éléments avec une feuille de style CSS. L'ordre doit rester le même que celui défini au départ dans le document XML.</li>
+                        <li>Il n'est pas possible de réorganiser l'ordre des éléments avec une feuille de style CSS. L'ordre doit rester le même que celui défini au départ dans le document XML.</li>
                         <li>Pour créer des titres de sections, nous avons utilisé la commande CSS <i>content="titre à afficher"</i>. Cependant, cela ne nous semble pas optimal de stocker du contenu spécifique à ce document dans une feuille de style externe.</li>
                         <li>Nous n'avons pas pas non plus pu ajouter des titres de colonnes dans les tableaux que nous voulions faire, car les tableaux sont générés à partir des données du document XML.</li>
-                        <li>Il ne nous pas été possible de stylisé les éléments différements de l'endroit où il apparaissaient dans le document XML. Le sélecteur pour <i>ouvrageID</i> ne peut pas être différencié entre <i>adherentID</i> dans la branche <i>adherents</i>, et <i>adherentID</i> dans la branche <i>prets</i>.</li>
+                        <li>Il ne nous pas été possible de stylisé les éléments différemment de l'endroit où il apparaissaient dans le document XML. Le sélecteur pour <i>ouvrageID</i> ne peut pas être différencié entre <i>adherentID</i> dans la branche <i>adherents</i>, et <i>adherentID</i> dans la branche <i>prets</i>.</li>
+                        <li>Le format du <i>content</i> est dépendant de du format du sélecteur. Ainsi, il nous a été impossible de mettre bien en forme le titre <i>Liste de prêts</i> car il est encadré de 2 blocs <i>display:"table";</i>.</li>
+                        <li>Bien que la mise en forme conditionnelle soit possible avec le couple CSS+XML, le contenu conditionnel n'est pas possible.<br/>Par exemple, si un prêt est en cours ou en retard, afficher la date de retour prévue, et si le prêt a été rendu, afficher la date de retour effective. </li>
                     </ul>
+
+                    <p>Voici les modifications que nous aurions pu effectuer sur le document XML pour nous rapprocher de la mise en forme initialement voulue :</p>
+                <ul>
+                    <li>Nous aurions pu réordonner les éléments à l'image de l'ordre que nous souhaitons voir être affiché.</li>
+                    <li>Nous aurions pu ajouter une ligne comme première enfant de <i>ouvrages</i> et <i>prets</i>, pour décrire les labels des colonnes du tableau.</li>
+                    <li>Nous aurions pu enrober, wrapper nos éléments <i>adherents</i>, <i>ouvrages</i> et <i>prets</i> avec un autre element parent dans le seul but de pouvoir mettre en forme les titres de chaque jeu de données en s'affranchissant la forme (<i>display</i>) de ces éléments <i>adherents</i>, <i>ouvrages</i> et <i>prets</i>.</li>
+                </ul>
                     <h3>Réalisation de la DTD</h3>
                     <p>La DTD nous permet d'ajouter des conditions supplémentaires sur les données acceptables pour chaque élément et préciser davantage leur structure et leur syntaxe. </p>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th><b>adherent</b></th>
+                            <th><b>ouvrage</b></th>
+                            <th><b>pret</b></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                Attributs
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>etatAdhesion</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>disponibilite</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>statut</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Elements
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>adherentID</li>
+                                    <li>prenom</li>
+                                    <li>nom</li>
+                                    <li>age</li>
+                                    <li>email</li>
+                                    <li>telephone</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>ouvrageID</li>
+                                    <li>ISBN</li>
+                                    <li>titre</li>
+                                    <li>auteur</li>
+                                    <li>anneePublication</li>
+                                    <li>editeur</li>
+                                    <li>langue</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>pretID</li>
+                                    <li>adherentID</li>
+                                    <li>ouvrageID</li>
+                                    <li>dateEmprunt</li>
+                                    <li>dateRetourPrevue</li>
+                                    <li>dateRetour</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="col-xs-12 col-md-4">
-
-                </div>
-            </div>
-        </div>
-    </body>
-
-<!--
-	<body>
-        <div class="container">
-            <div id="holder-header">
-                <div id="header" class="col-xs-12 col-md-12">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <h1>Scalable Vector Graphics</h1>
-                            <p>by DEVAUX Camille &amp; GROUSSARD Arnaud</p>
+                <div class="col-xs-12 col-md-3 col-lg-3">
+                    <div class="side-menu">
+                        <h3>
+                            Raccourcis vers les documents
+                        </h3>
+                        <div class="wrap">
+                            <div class="link-logo">
+                                <div class="shortcut">
+                                    <a href="document.xml"><img class="img-thumbnail" src="file_xml.png" alt="DOCUMENT.XML"/><br/>Document XML brut</a>
+                                </div>
+                                <div class="shortcut">
+                                    <a href="document_css.xml"><img class="img-thumbnail" src="file_xml2.png" alt="DOCUMENT_CSS.XML"/><br/>Document XML stylisé</a>
+                                </div>
+                                <div class="shortcut">
+                                    <a href="document_css.css"><img class="img-thumbnail" src="file_css.png" alt="DOCUMENT_CSS.CSS"/><br/>Document CSS</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-		<div class="main">
-			<div class="container">
-				<div class="col-xs-12 col-md-8">
-					<div class="titre">
-                        <h3>Démarche suivie et raisonnement</h3>
-                    </div>
-					<p>Pour ce BE, nous avons choisir de réaliser le travail 1 - Version Minimale.</p>
-					<p>Aucun de nous deux ne maîtrisant assez un langage de programmation pour réaliser en 4h les autres
-						travaux proposés, il nous paraissait plus sage de se concentrer essentiellement sur SVG,
-						l'objectif même de ce BE.</p>
-					<p>Nous avons réalisé deux graphiques avec SVG. Ces graphiques s'inspirent des données de Météo
-						France, pour Paris, au 4 Novembre :</p>
-					<ol>
-						<li>Le premier graphique présente d'un côté les températures annoncées, inscrites dans un
-							intervalle d'erreur (T° min, T° max), et de l'autre l'évolution des précipations par
-							heure.</li>
-						<li>Le deuxième graphique donne une plage de direction et vitesse que prendra le vent au 4
-							novembre, et celles prévues au 5 novembre.</li>
-					</ol>
-                    <div class="titre">
-					    <h3>Difficultés rencontrées lors de l'élaboration des graphiques</h3>
-                    </div>
-                    <p>
-                        Avant de commencer à coder nos graphiques SVG, nous nous sommes inspirés d'autres graphiques et
-                        les avons dessinés, en essayant de respecter l'échelle, dans un cadre 180*180. Après avoir pris
-                        connaissance des différents éléments de base (<i>line, rect, circle, etc.)</i> ainsi que de
-                        leurs attributs et options, nous avons commencés à réaliser nos graphiques en parallèle.
-                    </p>
-					<p>
-                        Afin de s'initier à SVG et de réaliser en même le travail demandé, nous avons procédés de façon
-                        itérative, en analysant les résultats des ajouts et modifications apportés à notre code.
-                    </p>
-                    <div class="titre">
-                        <h4>Géométrie et dimensions du canevas SVG</h4>
-                    </div>
-                    <p>
-                        Nous avons alors été confrontés à deux problèmes géométriques que nous n'avions pas immédiatement remarqué :
-                    </p>
-                    <ul>
-                        <li>
-                            Au fur et à mesure que nous ajoutions des éléments au graphique, nous nous sommes rendus
-                            compte que nous avions mal évalué la taille des éléments, et en particulier, la finesse des
-                            traits que nous pouvions tracer avec une taille d'image de 180px par 180px. Nous avons alors
-                            augmenté la taille de la <i>ViewBox</i>dans un premier temps.<br></br>Lors de la
-                            finalisation de nos graphiques, nous avons par la suite augmenté la taille de l'image vers
-                            720*720, et utilisé la transformationsuivante pour réadapter la taille de nos éléments :
-                            <i>transform="scale(1.5,1.5)"</i>
-                        </li>
-                        <li>
-                            L'origine du graphique se situe dans le coin supérieur gauche de notre graphique. Cette
-                            disposition n'était pas naturel pour tracer un graphique contenant des courbes, pour le premier
-                            graphique présentant la température et les précipitations, et pour construire la rose des vents
-                            pour le second graphique.<br></br>Nous avons changé le système de coordonnées pour la rose des vents
-                            grâce à la transformation suivante : <i>transform="translate(360,360)"</i>
-                        </li>
-                    </ul>
-					<div class="titre">
-                        <h4>Superposition des éléments</h4>
-                    </div>
-
-                    <p>
-                        Nous avons aussi remarqué que les éléments du graphique se superposent en fonction de leur place
-                        dans le document SVG. Les premiers éléments dans le code se retrouvent dans l'arrière-plan du
-                        graphique, alors que les derniers éléments se retrouvent au premier plan du graphique.
-                        Ainsi, après avoir ajouté les courbes et aires correspondantes aux données à la fin du code, nos axes
-                        se sont retrouvés parfois masqués par les jeux de données. Pour y remédier, il nous a fallu réorganiser
-                        notre code pour que les axes se situe vers la fin du code, et qu'ils apparaissent ainsi au premier plan.
-                    </p>
-                    <div class="titre">
-                        <h4>Courbes de Bezier</h4>
-                    </div>
-                    <p>
-                        Nous avons voulu lisser nos courbes, en particulier celle de la température. L'élément <i>path</i>
-                        de SVG permet de réaliser des courbes constituées de lignes ou de courbes.<br></br>
-                        Les éléments courbes sont des courbes cubique ou quadratiques de Bezier. Cependant nous avons eu des
-                        difficultés à lisser notre courbe (comme avec une fonction d'extrapolation sous Excel). <br/>
-                        Nous avons fait quelques tests pour essayer de faire coller les courbes de Beziers à la quinzaine de
-                        points dont nous disposions, avec peu de succès. Il semblerait que la meilleure solution soit
-                        d'extrapoler la courbe lissée sous Excel et d'importer ensuite un nombre plus important de points
-                        dans l'élément <i>path</i> et d'y tracer une courbe de Bezier.
-                    </p>
-				</div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="div_padding">
-                        <div class="titre">
-                            <h3>Températures et Précipitations</h3>
-                        </div>
-                        <object type="image/svg+xml" data="graphique-temp.svg" width="90%"/>
-                        <div class="agrandir">
-
-    <a href="graphique-temp.svg" target="_blank" >Agrandir le graphique</a>
-    </div>
-    <div class="titre">
-        <h3>Rose des vents</h3>
-    </div>
-    <object type="image/svg+xml" data="graphique-vent.svg" width="90%"/>
-    <div class="agrandir">
-
-        <a href="graphique-vent.svg" target="_blank" >Agrandir le graphique</a>
-    </div>
-    <p>
-        <i>N.B. La déclaration des polygones du graphique a posé problème dans le sens où nous avons défini
-            notre graphique et son référentiel par des rotations. En revanche, les différents points des
-            polygones se définissent en coordonnées cartésiennes. Nous sommes donc passés par un
-            <a href="Points pour polygone -data- Direction Vent.xlsx">tableur</a>, en appliquant les formules
-            trigonométriques ordinaires pour obtenir ces coordonnées en base cartésienne.</i>
-    </p>
-    </div>
-    </div>
-    </div>
-    </div>
     </body>
-    -->
-<!--
-	Ce Bureau d'Etudes consitue une première occasion d'utiliser XML dans le cadre d'un projet. 
-	Il s'agit ici de créer une application représentant les données d'une bibliothèque.
-	</p>
-	<h3>
-		Vocabulaire et Structure
-	</h3>
-	<h3>
-		Création du document XML, et peuplement données
-	</h3>
-	<h3>
-		Création de la feuille de style CSS
-	</h3>
-	<h3>
-		Ajout de la DTD
-	</h3>
-	<h3>
-		Difficultés &amp; Limites du couple XML-CSS 
-	</h3>
-	<h3>
-		Conclusion 
-	</h3>
-
-	Un seul document XML<br/>
-	Element Racine : bibliotheque<br/>
-		adherents<br/>
-			adherent, avec attribut : etatAdhesion (En cours, Termine&#c3a9;e)<br/>
-			adherentID, type INT<br/>
-			nom, type VARCHAR<br/>
-			prenom, type VARCHAR<br/>
-			age, type INT<br/>
-		ouvrages<br/>
-			ouvrage, avec attribut : disponibilite (Empruntable, Restreinte)<br/>
-			ouvrageID, type INT<br/>
-			ISBN, type VARCHAR<br/>
-			titre, type VARCHAR<br/>
-			auteur, type VARCHAR<br/>
-			anneePublication, type DATE<br/>
-			editeur, type VARCHAR<br/>
-			langue, type VARCHAR<br/>
-		prets<br/>
-			pret, avec attribut : statut (En cours, Rendu, Retard)<br/>
-			pretID,type INT<br/>
-			adherentID,type INT<br/>
-			ouvrageID,type INT<br/>
-			dateEmprunt, type DATE<br/>
-			dateRetourPrevue, type DATE<br/>
-			deteRetour, type DATE<br/>
-	</body>-->
 </html>
