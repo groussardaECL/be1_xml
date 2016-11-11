@@ -1,8 +1,15 @@
 *{
+}
+#header{
+	color: #2b2b2b;
+	border-bottom: #de1b1b solid 10px;
+	font-family: 'Bungee', cursive;
+	text-align: center;
+}
+.main{
 	font-family: 'Roboto', sans-serif;
 }
-
-p{
+.main.p{
 	text-align: justify;
 }
 
@@ -25,13 +32,19 @@ p{
 	display: inline-block;
 	padding: 20px;
 }
-
-.side-menu{
-	position: fixed;
-}
 .shortcut{
 	padding:10px;
 }
 .wrap{
+	text-align: center;
+}
+
+.fixed{
+	position: fixed;
+}
+
+.side-menu{
+	position: fixed;
+	width:20%;
 	text-align: center;
 }
