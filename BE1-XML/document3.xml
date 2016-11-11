@@ -4,7 +4,7 @@
         <!ELEMENT bibliotheque (adherents, ouvrages, prets)>
             <!ELEMENT adherents (adherent+)>
                 <!ATTLIST adherent etatAdhesion (Actif|Termine) #REQUIRED>
-                <!ELEMENT adherent (adherentID, prenom, nom, age, email, telephone)>
+                <!ELEMENT adherent (adherentID, prenom+, nom, age, email*, telephone*)>
                     <!ELEMENT adherentID (#PCDATA)>
                     <!ELEMENT prenom (#PCDATA)>
                     <!ELEMENT nom (#PCDATA)>
@@ -13,7 +13,7 @@
                     <!ELEMENT telephone (#PCDATA)>
         <!ELEMENT ouvrages (ouvrage+)>
         <!ATTLIST ouvrage disponibilite (Disponible|Restreinte) #REQUIRED>
-                <!ELEMENT ouvrage (ouvrageID, ISBN, titre, auteur, anneePublication, editeur, langue)>
+                <!ELEMENT ouvrage (ouvrageID, ISBN+, titre, auteur+, anneePublication, editeur, langue?)>
         <!ELEMENT ouvrageID (#PCDATA)>
                     <!ELEMENT ISBN (#PCDATA)>
                     <!ELEMENT titre (#PCDATA)>

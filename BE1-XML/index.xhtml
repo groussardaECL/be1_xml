@@ -159,17 +159,17 @@
                             </td>
                             <td>
                                 <ul>
-                                    <li>etatAdhesion</li>
+                                    <li>etatAdhesion<br/>requis, avec <i>Actif</i> ou <i>Terminé</i></li>
                                 </ul>
                             </td>
                             <td>
                                 <ul>
-                                    <li>disponibilite</li>
+                                    <li>disponibilite<br/>requis, avec <i>Disponible</i> ou <i>Resteinte</i></li>
                                 </ul>
                             </td>
                             <td>
                                 <ul>
-                                    <li>statut</li>
+                                    <li>statut<br/>requis, avec <i>Rendu</i>, <i>En_cours</i> ou <i>Retard</i></li>
                                 </ul>
                             </td>
                         </tr>
@@ -179,38 +179,39 @@
                             </td>
                             <td>
                                 <ul>
-                                    <li>adherentID</li>
-                                    <li>prenom</li>
-                                    <li>nom</li>
-                                    <li>age</li>
-                                    <li>email</li>
-                                    <li>telephone</li>
+                                    <li>adherentID, 1 seul</li>
+                                    <li>prenom, 1 ou plusieurs</li>
+                                    <li>nom, 1 seul</li>
+                                    <li>age, 1 seul</li>
+                                    <li>email, 0 ou plusieurs</li>
+                                    <li>telephone, 0 ou plusieurs</li>
                                 </ul>
                             </td>
                             <td>
                                 <ul>
-                                    <li>ouvrageID</li>
-                                    <li>ISBN</li>
-                                    <li>titre</li>
-                                    <li>auteur</li>
-                                    <li>anneePublication</li>
-                                    <li>editeur</li>
-                                    <li>langue</li>
+                                    <li>ouvrageID, 1 seul</li>
+                                    <li>ISBN, 1 ou plusieurs</li>
+                                    <li>titre, 1 seul</li>
+                                    <li>auteur, 1 ou plusieurs</li>
+                                    <li>anneePublication, 1 seul</li>
+                                    <li>editeur, 1 seul</li>
+                                    <li>langue, 0 ou 1</li>
                                 </ul>
                             </td>
                             <td>
                                 <ul>
-                                    <li>pretID</li>
-                                    <li>adherentID</li>
-                                    <li>ouvrageID</li>
-                                    <li>dateEmprunt</li>
-                                    <li>dateRetourPrevue</li>
-                                    <li>dateRetour</li>
+                                    <li>pretID, 1 seul</li>
+                                    <li>adherentID, 1 seul</li>
+                                    <li>ouvrageID, 1 seul</li>
+                                    <li>dateEmprunt, 1 seul</li>
+                                    <li>dateRetourPrevue, 1 seul</li>
+                                    <li>dateRetour, 0 ou 1</li>
                                 </ul>
                             </td>
                         </tr>
                         </tbody>
                     </table>
+                    <p>Tous les éléments sont déclarés en tant que <i>Parsed Character Data</i> (<i>#PCDATA</i>).</p>
                 </div>
                 <div class="col-md-4 col-xs-12" >
                     <div class="side-menu">
