@@ -27,8 +27,7 @@ p{
 	font-size:15px;
 }
 .titre{
-	color: #eae581;
-	text-align: center;
+	text-align: left;
 }
 
 object{
@@ -37,26 +36,18 @@ object{
 	width: 100%;
 }
 
-h4{
-	text-align: center;
-	color: #eae581;
-}
 
 .agrandir{
 	text-align: center;
 	padding:5px;
-	color: #de1b1b;
 }
 
 .col-md-4{
 	padding:10 px;
-	background-color: #f6f6f6;
 }
 
 .col-md-8{
 	padding:10 px;
-	background-color: #2b2b2b;
-	color: #f6f6f6;
 }
 
 .div_padding{
