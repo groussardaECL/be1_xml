@@ -23,17 +23,17 @@
 }
 
 .img-thumbnail{
-	width: 70px;
+	width: 60px;
 	margin:5px;
 }
 
 .link-logo{
 	text-align: center;
 	display: inline-block;
-	padding: 20px;
 }
 .shortcut{
 	padding:10px;
+	text-align: left;
 }
 .wrap{
 	text-align: center;
