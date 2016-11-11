@@ -2,7 +2,6 @@
 *{
 	font-family: arial;
 }
-
 /*Adherents*/
 adherents {
     background-color: #ffffff;
@@ -10,6 +9,7 @@ adherents {
 	display: block;
 	margin-left: 5%;
 	margin-right:5%;
+    zoom:70%;
 }
 adherents::before{
 	content:"Liste des adhérents";
@@ -138,41 +138,64 @@ ouvrages{
 	width:90%;
 	margin-left: 5%;
 	margin-right:5%;
+    zoom: 70%;
 }
 ouvrage{
 	display: table-row;
 	padding:5px;
 }
+
 ouvrage:nth-child(2n+1)  {
 	background-color: #eeeeee;
 }
-
+ouvrage:hover{
+	background-color: #eae581;
+}
 ouvrageID{
 	display: table-cell;
 }
+/*ouvrageID::before{
+    content:"N°"
+}*/
 ISBN{
 	display:table-cell;
 }
-
+/*ISBN::before{
+    content:"ISBN :"
+}*/
 titre{
 	display: table-cell;
 	padding:10px;
 }
+/*titre::before{
+    content:"Titre :"
+}*/
 auteur{
 	display:table-cell;
 }
+/*auteur::before{
+    content:"Auteur : "
+}*/
 annnePublication{
 	display: table-cell;
 }
+/*anneePublication::before{
+    content:"Publication : "
+}*/
 editeur{
 	display: table-cell;
 }
+/*editeur::before{
+    content:"Editeur : "
+}*/
 langue{
 display: table-cell;
 }
+/*langue::before{
+    content:"Langue : "
+}*/
 
-ouvrage:hover{
-	background-color: #eae581}
+
 
 prets::before{
 	content:"Liste des prêts";
@@ -187,6 +210,7 @@ prets{
 	width:90%;
 	margin-left: 5%;
 	margin-right:5%;
+    zoom: 70%;
 }
 pret{
 	display: table-row;
@@ -198,35 +222,52 @@ pret:nth-child(2n+1)  {
 
 pretID{
 	display: table-cell;
+    padding:10px;
+}
+pretID::before{
+    content:"N° prêt : "
 }
 adherentID{
 	display:table-cell;
-	width: 5%;
 }
-
+adherentID::before{
+    content:"N° Adherent : "
+}
 ouvrageID{
 	display: table-cell;
-	padding:10px;
+}
+pret>ouvrageID::before{
+    content:"N° ouvrage : "
 }
 dateEmprunt{
 	display:table-cell;
 }
+dateEmprunt::before{
+    content:"Début : "
+}
+
 dateRetourPrevue{
 	display: table-cell;
+}
+dateRetourPrevue::before{
+    content:"Retour prévu : "
 }
 dateRetour{
 	display: table-cell;
 }
 pret[status="Retard"]>dateRetour::before {
-	content:"En retard";
+	content:"Prêt en retard";
 	color: maroon;
 	display: table-cell;
 }
-	pret[status="Rendu"]>dateRetour {
+pret[status="Rendu"]>dateRetour {
 		color: forestgreen;
 }
+pret[status="Rendu"]>dateRetour::before {
+    content: "Rendu le ";
+}
 pret[status="En_cours"]>dateRetour::before {
-	content:"En cours ";
+	content:"Prêt en cours ";
 	color: navy;
 	display: table-cell;
 }
