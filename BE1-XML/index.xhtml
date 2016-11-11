@@ -54,7 +54,7 @@
                             </td>
                             <td>
                                 <ul>
-                                    <li>statut</li>
+                                    <li>status</li>
                                 </ul>
                             </td>
                         </tr>
@@ -96,11 +96,11 @@
                         </tr>
                         </tbody>
                     </table>
-                    <p>L'une des grande difficulté à laquelle nous avons été confrontés a été le choix entre attributs ou éléments. Nous avons finalement choisi de ne garder comme attributs que ce qui représente les états, qui seront variables. Ainsi, <i>etatAdhesion</i>, qui caractérise la validité de l'adhésion à la bibliothèque d'un des membres, <i>disponibilite</i> pour caractériser si un ouvrage est emprunté, et <i>statut</i> qui caractérise si un prêt est en cours, en retard, ou terminé.</p>
+                    <p>L'une des grandes difficultés à laquelle nous avons été confrontés a été le choix entre attributs ou éléments. Nous avons finalement choisi de ne garder comme attributs que ce qui représente les états, qui seront variables. Ainsi, <i>etatAdhesion</i>, qui caractérise la validité de l'adhésion à la bibliothèque d'un des membres, <i>disponibilite</i> pour caractériser si un ouvrage est emprunté, et <i>statut</i> qui caractérise si un prêt est en cours, en retard, ou terminé.</p>
                     <p>Les autres données ont été caractérisées par des éléments balise.</p>
                     <h3>Création du document XML/XHTML et peuplement de données</h3>
                     <p>Nous avons commencé par créer le document XML en testant l'architecture qui nous avions précédemment avec un ou deux adhérents, ouvrages, et prêts. Nous avons ainsi découvert l'outil de validation XML du W3C. Nous avons passé plus de temps que prévu à comprendre les déclarations nécessaires avec les bonnes URI (XML, DOCTYPE, Encodage) au début du document XML et XHTML.</p>
-                    <p>Pour accélérer notre peuplement du document XML, notamment des catégories <i>adherents</i> et <i>prets</i> nous avons utilisé un site de génération de données <a href="http://www.generatedata.com/">Generata Data</a>. Les données sur les <i>ouvrages</i> ont été créées à la main. Quelques problèmes ont du être corrigés quand nous avons fusionnés les différentes catégories dans le document XML principale.</p>
+                    <p>Pour accélérer notre peuplement du document XML, notamment des catégories <i>adherents</i> et <i>prets</i> nous avons utilisé un site de génération de données <a href="http://www.generatedata.com/">Generate Data</a>. Les données sur les <i>ouvrages</i> ont été créées à la main. Quelques problèmes ont dû être corrigés quand nous avons fusionnés les différentes catégories dans le document XML principale.</p>
                     <div class="wrap">
                         <div class="link-logo">
                             <a href="document.xml"><img class="img-thumbnail" src="file_xml.png" alt="DOCUMENT.XML"/><br/>Accéder au document XML</a>
@@ -123,8 +123,8 @@
                     <ul>
                         <li>Il n'est pas possible de réorganiser l'ordre des éléments avec une feuille de style CSS. L'ordre doit rester le même que celui défini au départ dans le document XML.</li>
                         <li>Pour créer des titres de sections, nous avons utilisé la commande CSS <i>content="titre à afficher"</i>. Cependant, cela ne nous semble pas optimal de stocker du contenu spécifique à ce document dans une feuille de style externe.</li>
-                        <li>Nous n'avons pas pas non plus pu ajouter des titres de colonnes dans les tableaux que nous voulions faire, car les tableaux sont générés à partir des données du document XML.</li>
-                        <li>Il ne nous pas été possible de stylisé les éléments différemment de l'endroit où il apparaissaient dans le document XML. Le sélecteur pour <i>ouvrageID</i> ne peut pas être différencié entre <i>adherentID</i> dans la branche <i>adherents</i>, et <i>adherentID</i> dans la branche <i>prets</i>.</li>
+                        <li>Nous n'avons pas non plus pu ajouter des titres de colonnes dans les tableaux que nous voulions faire, car les tableaux sont générés à partir des données du document XML.</li>
+                        <li>Il ne nous pas été possible de stylisé les éléments différemment de l'endroit où ils apparaissaient dans le document XML. Le sélecteur pour <i>ouvrageID</i> ne peut pas être différencié entre <i>adherentID</i> dans la branche <i>adherents</i>, et <i>adherentID</i> dans la branche <i>prets</i>.</li>
                         <li>Le format du <i>content</i> est dépendant de du format du sélecteur. Ainsi, il nous a été impossible de mettre bien en forme le titre <i>Liste de prêts</i> car il est encadré de 2 blocs <i>display:"table";</i>.</li>
                         <li>Bien que la mise en forme conditionnelle soit possible avec le couple CSS+XML, le contenu conditionnel n'est pas possible.<br/>Par exemple, si un prêt est en cours ou en retard, afficher la date de retour prévue, et si le prêt a été rendu, afficher la date de retour effective. </li>
                     </ul>
@@ -133,7 +133,7 @@
                 <ul>
                     <li>Nous aurions pu réordonner les éléments à l'image de l'ordre que nous souhaitons voir être affiché.</li>
                     <li>Nous aurions pu ajouter une ligne comme première enfant de <i>ouvrages</i> et <i>prets</i>, pour décrire les labels des colonnes du tableau.</li>
-                    <li>Nous aurions pu enrober, wrapper nos éléments <i>adherents</i>, <i>ouvrages</i> et <i>prets</i> avec un autre element parent dans le seul but de pouvoir mettre en forme les titres de chaque jeu de données en s'affranchissant la forme (<i>display</i>) de ces éléments <i>adherents</i>, <i>ouvrages</i> et <i>prets</i>.</li>
+                    <li>Nous aurions pu enrober, wrapper nos éléments <i>adherents</i>, <i>ouvrages</i> et <i>prets</i> avec un autre élément parent dans le seul but de pouvoir mettre en forme les titres de chaque jeu de données en s'affranchissant la forme (<i>display</i>) de ces éléments <i>adherents</i>, <i>ouvrages</i> et <i>prets</i>.</li>
                 </ul>
                     <h3>Réalisation de la DTD</h3>
                     <p>La DTD nous permet d'ajouter des conditions supplémentaires sur les données acceptables pour chaque élément et préciser davantage leur structure et leur syntaxe. </p>
@@ -169,7 +169,7 @@
                             </td>
                             <td>
                                 <ul>
-                                    <li>statut<br/>requis, avec <i>Rendu</i>, <i>En_cours</i> ou <i>Retard</i></li>
+                                    <li>status<br/>requis, avec <i>Rendu</i>, <i>En_cours</i> ou <i>Retard</i></li>
                                 </ul>
                             </td>
                         </tr>
