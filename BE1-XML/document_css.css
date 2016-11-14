@@ -151,6 +151,9 @@ ouvrage:nth-child(2n+1)  {
 ouvrage:hover{
 	background-color: #eae581;
 }
+ouvrage[disponibilite="Restreinte"]{
+	color: #64070b;
+}
 ouvrageID{
 	display: table-cell;
 }
