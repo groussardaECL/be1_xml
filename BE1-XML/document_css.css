@@ -32,7 +32,7 @@ adherent{
 	horiz-align: middle;
 	box-shadow: 2px 2px 4px 3px #a7a7a7;
 }
-adherent:hover{
+	adherent:hover{
 	display: inline-block;
 	padding-bottom: 10px;
 	border: solid 1px black;
@@ -41,6 +41,7 @@ adherent:hover{
 	width: 300px;
 	horiz-align: middle;
 	box-shadow: 4px 4px 6px 4px #a7a7a7;
+	background-color: #f4f4e4;
 }
 adherent[etatAdhesion="Termine"]>adherentID {
 	color: #9f0002;
@@ -142,7 +143,6 @@ ouvrages{
 }
 ouvrage{
 	display: table-row;
-	padding:5px;
 }
 
 ouvrage:nth-child(2n+1)  {
@@ -152,16 +152,18 @@ ouvrage:hover{
 	background-color: #eae581;
 }
 ouvrage[disponibilite="Restreinte"]{
-	color: #64070b;
+	color: #b4060c;
 }
 ouvrageID{
 	display: table-cell;
+	padding-left: 80px;
 }
 /*ouvrageID::before{
     content:"N°"
 }*/
 ISBN{
 	display:table-cell;
+	padding-right:60px;
 }
 /*ISBN::before{
     content:"ISBN :"
@@ -175,39 +177,47 @@ titre{
 }*/
 auteur{
 	display:table-cell;
+	padding-right: 60px;
 }
 /*auteur::before{
     content:"Auteur : "
 }*/
-annnePublication{
+anneePublication{
 	display: table-cell;
+	padding-right:60px;
 }
 /*anneePublication::before{
     content:"Publication : "
 }*/
 editeur{
 	display: table-cell;
+	padding-right:60px;
 }
 /*editeur::before{
     content:"Editeur : "
 }*/
 langue{
 display: table-cell;
+padding-right: 60px;
 }
 /*langue::before{
     content:"Langue : "
 }*/
 
-
-
 prets::before{
 	content:"Liste des prêts";
 	font-size: 2em;
 	text-align: center;
-	margin: 15px;
+	padding: 15px;
 	display: block;
-	text-align: center;
+	vertical-align: middle;
+	border-bottom: solid 2px #000;
+	margin-top:30px;
+	margin-bottom: 20px;
+	font-weight:bold;
+	width:500%;
 }
+
 prets{
 	display: table;
 	width:90%;
@@ -215,6 +225,7 @@ prets{
 	margin-right:5%;
     zoom: 70%;
 }
+
 pret{
 	display: table-row;
 	padding:5px;
@@ -225,25 +236,31 @@ pret:nth-child(2n+1)  {
 
 pretID{
 	display: table-cell;
-    padding:10px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	padding-left: 80px;
+    padding-right: 10px;
 }
 pretID::before{
     content:"N° prêt : "
 }
 adherentID{
 	display:table-cell;
+	padding-right:60px;
 }
 adherentID::before{
     content:"N° Adherent : "
 }
 ouvrageID{
 	display: table-cell;
+	padding-right:60px;
 }
 pret>ouvrageID::before{
     content:"N° ouvrage : "
 }
 dateEmprunt{
 	display:table-cell;
+	padding-right:60px;
 }
 dateEmprunt::before{
     content:"Début : "
@@ -251,6 +268,7 @@ dateEmprunt::before{
 
 dateRetourPrevue{
 	display: table-cell;
+	padding-right:60px;
 }
 dateRetourPrevue::before{
     content:"Retour prévu : "

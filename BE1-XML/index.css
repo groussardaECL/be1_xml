@@ -8,8 +8,6 @@
 }
 .main{
 	font-family: 'Roboto', sans-serif;
-}
-.main.p{
 	text-align: justify;
 }
 
@@ -27,12 +25,19 @@
 	margin:5px;
 }
 
-.link-logo{
+.link-logo1{
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.link-logo2{
 	text-align: center;
 	display: inline-block;
 }
+
 .shortcut{
-	padding:10px;
+	padding:5px;
 	text-align: left;
 }
 .wrap{
@@ -45,6 +50,15 @@
 
 .side-menu{
 	position: fixed;
-	width:20%;
+	right:10%;
 	text-align: center;
+}
+
+.comment {
+	color: #06b904;
+	font-style: italic;
+}
+
+.table {
+	text-align: left;
 }
