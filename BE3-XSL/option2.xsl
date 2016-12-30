@@ -5,7 +5,11 @@
 	<xsl:template match="/option">
 	 <html>
 	 	<link type="text/css" rel="stylesheet" href="option.css"></link>
-	 	<head>Fiches de notes</head>
+	 	<head>
+			<title>
+				Fiches de notes
+			</title>
+		</head>
 	 	<body>
 	 		<div class="en-tete">
 	 		<h1>Fiches de notes élèves</h1>
