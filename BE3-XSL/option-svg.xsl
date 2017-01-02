@@ -8,21 +8,21 @@
 
     <xsl:template match="/option">
 
+        <!-- Définition de quelques variables utiles -->
+        <xsl:variable name="nbCours"><xsl:value-of select="count(cours)"/></xsl:variable>
+        <xsl:variable name="marge-ext-gauche">20</xsl:variable>
+        <xsl:variable name="marge-ext-haut">20</xsl:variable>
+        <xsl:variable name="marge-int-gauche">50</xsl:variable>
+        <xsl:variable name="marge-int-haut">50</xsl:variable>
+        <xsl:variable name="largeur-cours">150</xsl:variable>
+        <xsl:variable name="hauteur">300</xsl:variable>
+        <xsl:variable name="hauteur-legende">200</xsl:variable>
+        <xsl:variable name="zoom"><xsl:value-of select="1.3"/></xsl:variable>
+
         <svg xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
              width="100%"
              height="1000">
-
-            <!-- Définition de quelques variables utiles -->
-            <xsl:variable name="nbCours"><xsl:value-of select="count(cours)"/></xsl:variable>
-            <xsl:variable name="marge-ext-gauche"><xsl:value-of select="20"/></xsl:variable>
-            <xsl:variable name="marge-ext-haut"><xsl:value-of select="20"/></xsl:variable>
-            <xsl:variable name="marge-int-gauche"><xsl:value-of select="50"/></xsl:variable>
-            <xsl:variable name="marge-int-haut"><xsl:value-of select="50"/></xsl:variable>
-            <xsl:variable name="largeur-cours"><xsl:value-of select="100"/></xsl:variable>
-            <xsl:variable name="hauteur"><xsl:value-of select="200"/></xsl:variable>
-            <xsl:variable name="hauteur-legende"><xsl:value-of select="200"/></xsl:variable>
-            <xsl:variable name="zoom"><xsl:value-of select="1.3"/></xsl:variable>
 
             <xsl:element name="g">
                 <xsl:attribute name="transform">scale(<xsl:value-of select="$zoom"/><xsl:text> </xsl:text><xsl:value-of select="$zoom"/>)</xsl:attribute>

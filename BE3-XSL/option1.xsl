@@ -27,7 +27,10 @@
                                 <tr>
                                     <td><xsl:apply-templates select="nom"/></td>
                                     <td><xsl:apply-templates select="prénom"/></td>
-                                    <td><xsl:apply-templates select="phone"/></td>
+                                    <td><xsl:choose>
+                                        <xsl:when test="phone"><xsl:apply-templates select="phone"/></xsl:when>
+                                        <xsl:otherwise>NC</xsl:otherwise>
+                                    </xsl:choose></td>
                                     <td>
                                         <xsl:element name="a">
                                             <xsl:attribute name="href">
@@ -60,7 +63,10 @@
                             <tr>
                                 <td><xsl:apply-templates select="nom"/></td>
                                 <td><xsl:apply-templates select="prénom"/></td>
-                                <td><xsl:apply-templates select="phone"/></td>
+                                <td><xsl:choose>
+                                    <xsl:when test="phone"><xsl:apply-templates select="phone"/></xsl:when>
+                                    <xsl:otherwise>NC</xsl:otherwise>
+                                </xsl:choose></td>
                                 <td>
                                     <xsl:element name="a">
                                         <xsl:attribute name="href">

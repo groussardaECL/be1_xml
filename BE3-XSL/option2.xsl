@@ -4,7 +4,7 @@
 
 	<xsl:template match="/option">
 	 <html>
-	 	<link type="text/css" rel="stylesheet" href="option.css"></link>
+	 	<link type="text/css" rel="stylesheet" href="option23.css"/>
 	 	<head>
 			<title>
 				Fiches de notes
@@ -14,19 +14,19 @@
 	 		<div class="en-tete">
 	 		<h1>Fiches de notes élèves</h1>
 	 		</div>
-	 		<xsl:apply-templates></xsl:apply-templates>
+	 		<xsl:apply-templates/>
 	 	</body>
 	 </html>
 	</xsl:template>
 
 	<xsl:template match="personne">
-		<xsl:variable name="currentid" select= "//étudiant[@id=current()/@id]"></xsl:variable>
+		<xsl:variable name="currentid" select= "//étudiant[@id=current()/@id]"/>
 		<xsl:if test="$currentid">
 			<div class="fiches-note">
 				<h3>
-					<xsl:value-of select="prénom"></xsl:value-of>
+					<xsl:value-of select="prénom"/>
 					<xsl:text> </xsl:text>
-					<xsl:value-of select="nom"></xsl:value-of>
+					<xsl:value-of select="nom"/>
 				</h3>
 				<table class="table-note">
 					<tr>
@@ -37,14 +37,14 @@
 					</tr>
 					<xsl:for-each select="$currentid">
 						<tr>
-							<td class="intitule-cours"><xsl:value-of select="../@intitulé"></xsl:value-of></td>
-							<td class="note"><xsl:value-of select="note"></xsl:value-of></td>
-							<td class="absence"><xsl:value-of select="absences"></xsl:value-of></td>
-							<td class="appreciation"><xsl:value-of select="comment"></xsl:value-of></td>
+							<td class="intitule-cours"><xsl:value-of select="../@intitulé"/></td>
+							<td class="note"><xsl:value-of select="note"/></td>
+							<td class="absence"><xsl:value-of select="absences"/></td>
+							<td class="appreciation"><xsl:value-of select="comment"/></td>
 						</tr>
 					</xsl:for-each>
 				</table>
-				<p><br></br></p>
+				<p><br/></p>
 			</div>
 		</xsl:if>
 	</xsl:template>

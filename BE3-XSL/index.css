@@ -53,3 +53,42 @@ object{
 .div_padding{
     padding-left:10px;
 }
+
+.side-menu{
+    position: fixed;
+    left:70%;
+    text-align: center;
+}
+
+.shortcut{
+    padding:5px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.img-thumbnail{
+    width: 60px;
+    margin:5px;
+}
+
+.link-logo1{
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.wrap{
+    text-align: center;
+}
+
+.link-logo2{
+    text-align: center;
+    display: inline-block;
+}
+
+.img-thumbnail2 {
+    width: 30px;
+    margin-left:15px;
+    margin-right:15px;
+}
