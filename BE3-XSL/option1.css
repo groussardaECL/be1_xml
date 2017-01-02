@@ -10,7 +10,7 @@ th {
 	color:white;
 	padding:5px;
 	border:1px solid black;
-	background-color:#008B8B;
+	background-color: #de1b1b;
 }
 
 td {
@@ -32,6 +32,9 @@ table {
     width:75%;
     margin-left:auto;
 	margin-right: auto;
+	/*
+	table-layout: fixed;
+	 */
 }
 
 

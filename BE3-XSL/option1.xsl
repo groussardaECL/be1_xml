@@ -80,7 +80,7 @@
     </xsl:template>
 
     <xsl:template match="adresse">
-        <xsl:value-of select="translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"></xsl:value-of>
+        <xsl:value-of select="translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
     </xsl:template>
 </xsl:stylesheet>
 
