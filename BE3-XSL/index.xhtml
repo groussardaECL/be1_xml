@@ -47,7 +47,7 @@
                             <a href="option1.xml"><img class="img-thumbnail" src="file_xml2.png" alt="OPTION1.XML"/><br/>Document XML stylisé</a>
                         </div>
                         <div class="link-logo1">
-                            <a href="option1.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION1.XSLT"/><br/>Feuille de style XSLT</a>
+                            <a href="option1.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION1.XSL"/><br/>Feuille de style XSLT</a>
                         </div>
                         <div class="link-logo1">
                             <a href="option1.css" ><img class="img-thumbnail" src="file_css.png" alt="OPTION1.CSS"/><br/>Feuille de style CSS</a>
@@ -76,7 +76,7 @@
                             <a href="option2.xml"><img class="img-thumbnail" src="file_xml2.png" alt="OPTION2.XML"/><br/>Document XML stylisé</a>
                         </div>
                         <div class="link-logo1">
-                            <a href="option2.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION2.XSLT"/><br/>Feuille de style XSLT</a>
+                            <a href="option2.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION2.XSL"/><br/>Feuille de style XSLT</a>
                         </div>
                         <div class="link-logo1">
                             <a href="option23.css" ><img class="img-thumbnail" src="file_css.png" alt="OPTION.CSS"/><br/>Feuille de style CSS</a>
@@ -98,7 +98,7 @@
                             <a href="option3.xml"><img class="img-thumbnail" src="file_xml2.png" alt="OPTION3.XML"/><br/>Document XML stylisé</a>
                         </div>
                         <div class="link-logo1">
-                            <a href="option3.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION3.XSLT"/><br/>Feuille de style XSLT</a>
+                            <a href="option3.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION3.XSL"/><br/>Feuille de style XSLT</a>
                         </div>
                         <div class="link-logo1">
                             <a href="option1.css" ><img class="img-thumbnail" src="file_css.png" alt="OPTION1.CSS"/><br/>Feuille de style CSS</a>
@@ -131,14 +131,34 @@
                             <a href="option-svg.xml"><img class="img-thumbnail" src="file_xml2.png" alt="OPTION-SVG.XML"/><br/>Document XML stylisé</a>
                         </div>
                         <div class="link-logo1">
-                            <a href="option-svg.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION-SVG.XSLT"/><br/>Feuille de style XSLT</a>
+                            <a href="option-svg.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION-SVG.XSL"/><br/>Feuille de style XSLT</a>
                         </div>
                     </div>
 
                     <div class="titre">
                         <h3>Papier - XSLT-FO</h3>
                     </div>
-                    <p>Un essai sous XSLT-FO a été effectué, mais il ne nous pas été possible de tester celui-ci avec le moteur de transformation Apache-FOP.</p>
+                    <p>Dans cette partie, nous avons utilisé XSLT pour créer un document XSL-FO visant à l'impression d'un PDF</p>
+                    <p>Notre document XSL-FO vise à produire un PDF avec les coordonnées des élèves et professeurs.</p>
+                    <p>Nous avons tenté ici de produire un XSL-FO valide et bien formé sans nous soucier de la complexité de l'information représentée. Nous représentons les données issues de "personnes" simplement présentes dans le document option.xml</p>
+
+                    <p>Pour cela, il faut d'abord définir notre document XSL-FO, marges, region-before (haut de page), region-after (pied de page) et également définir le tableau en spécifiant sa taille, sa forme.</p>
+                    <p>Nous définissons le nombre de colonnes du tableau au préalable puis à l'aide de fo:table-cell, nous insérons notre contenu dans les cellules. Nous avons alors créé nos templates comme précédemment pour récupérer les coordonnées des personnes</p>
+                    <p>XSL-FO ne produisant pas un PDF tout seul, il nous a été difficile au départ d'observer le résultat de notre code.</p>
+                    <p>La validation et la génération du document a été faite à partir du site <a href="http://www.utilities-online.info/foprender">Utilities Online - FO Render</a>.</p>
+
+                    <div class="wrap">
+                        <div class="link-logo1">
+                            <a href="option-xslfo.xml"><img class="img-thumbnail" src="file_xml2.png" alt="OPTION-XSLFO.XML"/><br/>Document XML stylisé</a>
+                        </div>
+                        <div class="link-logo1">
+                            <a href="option-xslfo.xsl" ><img class="img-thumbnail" src="file_xslt.png" alt="OPTION-XSLFO.XSL"/><br/>Feuille de style XSLT</a>
+                        </div>
+                        <div class="link-logo1">
+                            <a href="option-xslfo.pdf"><img class="img-thumbnail" src="file_pdf.png" alt="OPTION-XSLFO.PDF"/><br/>Document PDF généré</a>
+                        </div>
+                    </div>
+
 				</div>
                 <div class="col-xs-12 col-md-4">
                     <div class="side-menu">
@@ -169,6 +189,12 @@
                                 <div class="shortcut">
                                     <a href="option-svg.xml"><img class="img-thumbnail2" src="file_xml.png" alt="OPTION-SVG.XML"/></a>
                                     <a href="option-svg.xsl"><img class="img-thumbnail2" src="file_xslt.png" alt="OPTION-SVG.XSL"/></a>
+                                </div>
+                                PDF via XSL-FO
+                                <div class="shortcut">
+                                    <a href="option-xslfo.xml"><img class="img-thumbnail2" src="file_xml.png" alt="OPTION-XSLFO.XML"/></a>
+                                    <a href="option-xslfo.xsl"><img class="img-thumbnail2" src="file_xslt.png" alt="OPTION-XSLFO.XSL"/></a>
+                                    <a href="option-xslfo.pdf"><img class="img-thumbnail2" src="file_pdf.png" alt="OPTION-XSLFO.PDF"/></a>
                                 </div>
                             </div>
                         </div>
